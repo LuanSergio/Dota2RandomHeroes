@@ -1,0 +1,112 @@
+{
+  "faction": "dire",
+  "group": "intelligence",
+	"id": "6",
+  "heroes": [
+    {
+      "name": "Bane",
+      "id": "1",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Durabl"]
+    },
+    {
+      "name": "Lich",
+      "id": "2",
+      "roles": ["Ranged", "Support", "Nuker"]
+    },
+    {
+      "name": "Lion",
+      "id": "3",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator"]
+    },
+    {
+      "name": "Witch Doctor",
+      "id": "4",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Enigma",
+      "id": "5",
+      "roles": ["Ranged", "Disabler", "Jungler", "Initiator", "Pusher"]
+    },
+    {
+      "name": "Necrophos",
+      "id": "6",
+      "roles": ["Ranged", "Carry", "Nuker", "Durable", "Disabler"]
+    },
+    {
+      "name": "Warlock",
+      "id": "7",
+      "roles": ["Ranged", "Support", "Initiator", "Disabler"]
+    },
+    {
+      "name": "Queen of Pain",
+      "id": "8",
+      "roles": ["Ranged", "Carry", "Nuker", "Escape"]
+    },
+    {
+      "name": "Death Prophet",
+      "id": "9",
+      "roles": ["Ranged", "Carry", "Pusher", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Pugna",
+      "id": "10",
+      "roles": ["Ranged", "Nuker", "Pusher"]
+    },
+    {
+      "name": "Dazzle",
+      "id": "11",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Leshrac",
+      "id": "12",
+      "roles": ["Ranged", "Carry", "Support", "Nuker", "Pusher", "Disabler"]
+    },
+    {
+      "name": "Dark Seer",
+      "id": "13",
+      "roles": ["Melee", "Initiator", "Jungler", "Escape", "Disabler"]
+    },
+    {
+      "name": "Batrider",
+      "id": "14",
+      "roles": ["Ranged", "Initiator", "Jungler", "Disabler", "Escape"]
+    },
+    {
+      "name": "Ancient Apparition",
+      "id": "15",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+    },
+    {
+      "name": "Invoker",
+      "id": "16",
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Escape", "Pusher"]
+    },
+    {
+      "name": "Outworld Devourer",
+      "id": "17",
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Visage",
+      "id": "18",
+      "roles": ["Ranged", "Support", "Nuker", "Durable", "Disabler", "Pusher"]
+    },
+    {
+      "name": "Oracle",
+      "id": "19",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+    },
+    {
+      "name": "Winter Wyvern",
+      "id": "20",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+    },
+    {
+      "name": "Grimstroke",
+      "id": "21",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+    }
+  ]
+}

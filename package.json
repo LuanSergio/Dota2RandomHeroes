@@ -1,0 +1,17 @@
+{
+  "name": "Dota2RandomTool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html -d dev --open",
+    "build": "parcel build index.html"
+  },
+  "repository": "https://github.com/luansergiomattos/Dota2RandomTool.git",
+  "author": "Luan Sergio Mattos",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "posthtml-include": "^1.4.3",
+    "stylus": "^0.54.7"
+  }
+}
