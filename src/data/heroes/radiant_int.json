@@ -1,0 +1,117 @@
+{
+  "faction": "radiant",
+  "group": "intelligence",
+  "id": "5",
+  "heroes": [
+    {
+      "name": "Crystal Maiden",
+      "id": "1",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Jungler"]
+    },
+    {
+      "name": "Puck",
+      "id": "2",
+      "roles": ["Ranged", "Initiator", "Disabler", "Escape", "Nuker"]
+    },
+    {
+      "name": "Storm Spirit",
+      "id": "3",
+      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Initiator", "Disabler"]
+    },
+    {
+      "name": "Windranger",
+      "id": "4",
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Escape", "Nuker"]
+    },
+    {
+      "name": "Zeus",
+      "id": "5",
+      "roles": ["Ranged", "Nuker"]
+    },
+    {
+      "name": "Lina",
+      "id": "6",
+      "roles": ["Ranged", "Support", "Carry", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Shadow Shaman",
+      "id": "7",
+      "roles": ["Ranged", "Support", "Pusher", "Disabler", "Nuker", "Initiator"]
+    },
+    {
+      "name": "Tinker",
+      "id": "8",
+      "roles": ["Ranged", "Carry", "Nuker", "Pusher"]
+    },
+    {
+      "name": "Nature's Prophet",
+      "id": "9",
+      "roles": ["Ranged", "Carry", "Jungler", "Pusher", "Escape", "Nuker"]
+    },
+    {
+      "name": "Enchantress",
+      "id": "10",
+      "roles": ["Ranged", "Support", "Jungler", "Pusher", "Durable", "Disabler"]
+    },
+    {
+      "name": "Jakiro",
+      "id": "11",
+      "roles": ["Ranged", "Support", "Nuker", "Pusher", "Disable"]
+    },
+    {
+      "name": "Chen",
+      "id": "12",
+      "roles": ["Ranged", "Support", "Jungler", "Pusher"]
+    },
+    {
+      "name": "Silencer",
+      "id": "13",
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Initiator", "Nuker"]
+    },
+    {
+      "name": "Ogre Magi",
+      "id": "14",
+      "roles": ["Melee", "Support", "Nuker", "Disabler", "Durable", "Initiator"]
+    },
+    {
+      "name": "Rubick",
+      "id": "15",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+    },
+    {
+      "name": "Disruptor",
+      "id": "16",
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator"]
+    },
+    {
+      "name": "Keeper of the Light",
+      "id": "17",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Jungler"]
+    },
+    {
+      "name": "Skywrath Mage",
+      "id": "18",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Oracle",
+      "id": "19",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+    },
+    {
+      "name": "Techies",
+      "id": "20",
+      "roles": ["Ranged", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Dark Willow",
+      "id": "21",
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+    },
+    {
+      "name": "Void Spirit",
+      "id": "22",
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler"]
+    }
+  ]
+}

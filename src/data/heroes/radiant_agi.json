@@ -1,0 +1,107 @@
+{
+  "faction": "radiant",
+  "group": "agility",
+  "id": "3",
+  "heroes": [
+    {
+      "name": "Anti-Mage",
+      "id": "1",
+      "roles": ["Melee", "Carry", "Escape", "Nuker"]
+    },
+    {
+      "name": "Drow Ranger",
+      "id": "2",
+      "roles": ["Ranged", "Carry", "Disabler", "Pusher"]
+    },
+    {
+      "name": "Juggernaut",
+      "id": "3",
+      "roles": ["Melee", "Carry", "Pusher", "Escape"]
+    },
+    {
+      "name": "Mirana",
+      "id": "4",
+      "roles": ["Ranged", "Carry", "Support", "Escape", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Morphling",
+      "id": "5",
+      "roles": ["Ranged", "Carry", "Escape", "Durable", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Phantom Lancer",
+      "id": "6",
+      "roles": ["Melee", "Carry", "Escape", "Pusher", "Nuker"]
+    },
+    {
+      "name": "Vengeful Spirit",
+      "id": "7",
+      "roles": ["Ranged", "Support", "Initiator", "Disabler", "Nuker", "Escape"]
+    },
+    {
+      "name": "Riki",
+      "id": "8",
+      "roles": ["Melee", "Carry", "Escape", "Disabler"]
+    },
+    {
+      "name": "Sniper",
+      "id": "9",
+      "roles": ["Ranged", "Carry", "Nuker"]
+    },
+    {
+      "name": "Templar Assassin",
+      "id": "10",
+      "roles": ["Ranged",  "Carry",  "Escape"]
+    },
+    {
+      "name": "Luna",
+      "id": "11",
+      "roles": ["Ranged", "Carry", "Nuker", "Pusher"]
+    },
+    {
+      "name": "Bounty Hunter",
+      "id": "12",
+      "roles": ["Melee", "Escape", "Nuker"]
+    },
+    {
+      "name": "Ursa",
+      "id": "13",
+      "roles": ["Melee", "Carry", "Jungler", "Durable", "Disabler"]
+    },
+    {
+      "name": "Gyrocopter",
+      "id": "14",
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler"]
+    },
+    {
+      "name": "Lone Druid",
+      "id": "15",
+      "roles": ["Ranged", "Carry", "Pusher", "Jungler", "Durable"]
+    },
+    {
+      "name": "Naga Siren",
+      "id": "16",
+      "roles": ["Melee", "Carry", "Support", "Pusher", "Disabler", "Initiator", "Escape"]
+    },
+    {
+      "name": "Troll Warlord",
+      "id": "17",
+      "roles": ["Ranged", "Carry", "Pusher", "Disabler", "Durable"]
+    },
+    {
+      "name": "Ember Spirit",
+      "id": "18",
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator"]
+    },
+    {
+      "name": "Monkey King",
+      "id": "19",
+      "roles": ["Melee", "Carry", "Escape", "Disabler", "Initiator"]
+    },
+    {
+      "name": "Pangolier",
+      "id": "20",
+      "roles": ["Melee", "Carry", "Nuker", "Disabler", "Durable", "Escape", "Initiator"]
+    }
+  ]
+}

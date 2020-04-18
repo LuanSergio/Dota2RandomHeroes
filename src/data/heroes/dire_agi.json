@@ -1,0 +1,92 @@
+{
+  "faction": "dire",
+	"group": "agility",
+	"id": "4",
+  "heroes": [
+    {
+      "name": "Bloodseeker",
+      "id": "1",
+      "roles": ["Melee", "Carry", "Disabler", "Jungler", "Nuker", "Initiator"]
+    },
+    {
+      "name": "Shadow Fiend",
+      "id": "2",
+      "roles": ["Ranged", "Carry", "Nuker"]
+    },
+    {
+      "name": "Razor",
+      "id": "3",
+      "roles": ["Ranged", "Carry", "Durable", "Nuker", "Pusher"]
+    },
+    {
+      "name": "Venomancer",
+      "id": "4",
+      "roles": ["Ranged", "Support", "Nuker", "Initiator", "Pusher", "Disabler"]
+    },
+    {
+      "name": "Faceless Void",
+      "id": "5",
+      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Escape", "Durable"]
+    },
+    {
+      "name": "Phantom Assassin",
+      "id": "6",
+      "roles": ["Melee", "Carry", "Escape"]
+    },
+    {
+      "name": "Viper",
+      "id": "7",
+      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Disabler"]
+    },
+    {
+      "name": "Clinkz",
+      "id": "8",
+      "roles": ["Ranged", "Carry", "Escape", "Pusher"]
+    },
+    {
+      "name": "Broodmother",
+      "id": "9",
+      "roles": ["Melee", "Carry", "Pusher", "Escape", "Nuker"]
+    },
+    {
+      "name": "Weaver",
+      "id": "10",
+      "roles": ["Ranged", "Carry", "Escape"]
+    },
+    {
+      "name": "Spectre",
+      "id": "11",
+      "roles": ["Melee", "Carry", "Durable", "Escape"]
+    },
+    {
+      "name": "Meepo",
+      "id": "12",
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Pusher"]
+    },
+    {
+      "name": "Nyx Assassin",
+      "id": "13",
+      "roles": ["Melee", "Disabler", "Nuker", "Initiator", "Escape"]
+    },
+    {
+      "name": "Slark",
+      "id": "14",
+      "roles": ["Melee", "Carry", "Escape", "Disabler", "Nuker"]
+    },
+    {
+      "name": "Medusa",
+      "id": "15",
+      "roles": ["Ranged", "Carry", "Disabler", "Durable"]
+    },
+    {
+      "name": "Terrorblade",
+      "id": "16",
+      "roles": ["Melee", "Carry", "Pusher", "Nuker"]
+    },
+    {
+      "name": "Arc Warden",
+      "id": "17",
+      "roles": ["Ranged", "Carry", "Escape", "Nuker"]
+    }
+  ]
+}
