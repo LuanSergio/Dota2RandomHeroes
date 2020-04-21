@@ -4,9 +4,9 @@ import imgs from "../../img/heroes/*.png";
 export function createHeroesGallery(){
 
   heroesList.forEach(elm => {
-    const ctn = document.querySelector(`[data-group-ctn="${elm.group}"]`);
+    const container = document.querySelector(`[data-group-ctn="${elm.group}"]`);
     
-    ctn.innerHTML += `<div class="c-gallery__heroes" data-heroes-group="${elm.group}" data-heroes-faction="${elm.faction}"></div>`
+    container.innerHTML += `<div class="c-gallery__heroes" data-heroes-group="${elm.group}" data-heroes-faction="${elm.faction}"></div>`
     
     elm.heroes.forEach((hero) => {
       const name = hero.name;
@@ -22,7 +22,7 @@ export function createHeroesGallery(){
       
       const imgSrc = imgs[imgName];
       
-      heroes.insertAdjacentHTML("beforeend", `<img src="${imgSrc}" class="c-gallery__heroes-img" alt="${hero.name}" title="${hero.name}"></img>`  );
+      heroes.insertAdjacentHTML("beforeend", `<img src="${imgSrc}" class="c-gallery__heroes-img" alt="${hero.name}" title="${hero.name}"></img>`);
     })
   });
   

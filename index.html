@@ -7,25 +7,27 @@
   <meta name="description" content="A Tool that helps you get a random hero on Dota 2!">
 
   <title>Dota 2 Random Heroes</title>
-
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href="/src/assets/css/apps.styl" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <div class="t-ctn">
-      <div class="c-gallery" data-heroes-gallery>
-        <div class="c-gallery__group" data-group-ctn="strength">
-          <h3 class="c-gallery__group-title -strength">Strength</h3>
-        </div>
-        
-        <div class="c-gallery__group" data-group-ctn="agility">
-          <h3 class="c-gallery__group-title -agility">Agility</h3>
-        </div>
+  <main class="limit">
+    <div class="c-random" data-random>
+      <button class="c-random__buttton" data-random-button>Random</button>
+    </div>
+    
+    <div class="c-gallery" data-heroes-gallery>
+      <div class="c-gallery__group" data-group-ctn="strength">
+        <h3 class="c-gallery__group-title -strength">Strength</h3>
+      </div>
+      
+      <div class="c-gallery__group" data-group-ctn="agility">
+        <h3 class="c-gallery__group-title -agility">Agility</h3>
+      </div>
 
-        <div class="c-gallery__group" data-group-ctn="intelligence">
-          <h3 class="c-gallery__group-title -intelligence">Intelligence</h3>
-        </div>
+      <div class="c-gallery__group" data-group-ctn="intelligence">
+        <h3 class="c-gallery__group-title -intelligence">Intelligence</h3>
       </div>
     </div>
 	</main>
