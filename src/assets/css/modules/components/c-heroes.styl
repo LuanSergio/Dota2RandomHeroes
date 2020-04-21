@@ -17,6 +17,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  color: #fefefe;
 }
 
 .c-gallery__group-title::before {
@@ -65,4 +66,16 @@
   margin-bottom: 4px;
   margin-right: 2px;
   margin-left: 2px;
+  transition 0.05s opacity linear;
+
+// ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+// linear - specifies a transition effect with the same speed from start to end
+// ease-in - specifies a transition effect with a slow start
+// ease-out - specifies a transition effect with a slow end
+// ease-in-out
+}
+
+.c-gallery__heroes-img:hover {
+  opacity: 0.6;
+  // border: 3px solid #3A73A3;
 }
