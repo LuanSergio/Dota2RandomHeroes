@@ -13,38 +13,9 @@
 
 <body>
   <main class="limit">
-    <div class="c-random" data-random>
-      <button class="c-button -random" data-random-button>Random</button>
-    </div>
-
-    <div class="c-settings">
-      <input type="text" id="quantity" placeholder="Quantity">
-
-      <input type="text" list="filterHero" placeholder="Select a filter" />
-      <datalist id="filterHero" data-filter-hero>
-      </datalist>
-
-      <input type="text" list="searchHero" placeholder="Hero name" />
-      <datalist id="searchHero" data-search-hero>
-      </datalist>
-
-      <button class="c-button -add">add</button>
-      <button class="c-button -add">remove</button>
-    </div>
-    
-    <div class="c-gallery" data-heroes-gallery>
-      <div class="c-gallery__group" data-group-ctn="strength">
-        <h3 class="c-gallery__group-title -strength">Strength</h3>
-      </div>
-      
-      <div class="c-gallery__group" data-group-ctn="agility">
-        <h3 class="c-gallery__group-title -agility">Agility</h3>
-      </div>
-
-      <div class="c-gallery__group" data-group-ctn="intelligence">
-        <h3 class="c-gallery__group-title -intelligence">Intelligence</h3>
-      </div>
-    </div>
+    <include src="./partials/random.html"></include>
+    <include src="./partials/randomSettings.html"></include>
+    <include src="./partials/Herogallery.html"></include>
 	</main>
   <script src="src/assets/js/index.js"></script>  
 </body>
