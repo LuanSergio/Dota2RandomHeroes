@@ -1,0 +1,19 @@
+{
+  "roles": [
+    "Melee", 
+    "Ranged", 
+    "Carry", 
+
+    "Support",
+    "Mid",
+    "Offlaner",
+
+    "Durable", 
+    "Initiator",
+    "Nuker",
+    "Disabler",
+    "Pusher",
+    "Escape",
+    "Jungler"
+  ]
+}

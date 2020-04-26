@@ -6,7 +6,7 @@
     {
       "name": "Bane",
       "id": "1",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Durabl"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Durable"]
     },
     {
       "name": "Lich",

@@ -1,7 +1,13 @@
 import { createHeroesGallery } from './modules/createHeroesGallery';
-import { randomHeroes } from './modules/randomHeroes';
 import { searchHeroes } from './modules/searchHeroes';
+import { filterHeroes } from './modules/filterHeroes';
+import { randomQuantity } from './modules/randomQuantity';
+import { randomHeroes } from './modules/randomHeroes';
 
 createHeroesGallery();
-randomHeroes();
+
 searchHeroes();
+randomQuantity();
+filterHeroes();
+
+randomHeroes();
