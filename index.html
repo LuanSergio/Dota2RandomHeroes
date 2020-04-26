@@ -14,7 +14,22 @@
 <body>
   <main class="limit">
     <div class="c-random" data-random>
-      <button class="c-random__buttton" data-random-button>Random</button>
+      <button class="c-button -random" data-random-button>Random</button>
+    </div>
+
+    <div class="c-settings">
+      <input type="text" id="quantity" placeholder="Quantity">
+
+      <input type="text" list="filterHero" placeholder="Select a filter" />
+      <datalist id="filterHero" data-filter-hero>
+      </datalist>
+
+      <input type="text" list="searchHero" placeholder="Hero name" />
+      <datalist id="searchHero" data-search-hero>
+      </datalist>
+
+      <button class="c-button -add">add</button>
+      <button class="c-button -add">remove</button>
     </div>
     
     <div class="c-gallery" data-heroes-gallery>
