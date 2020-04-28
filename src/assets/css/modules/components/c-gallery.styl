@@ -18,7 +18,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #fefefe;
 }
 
@@ -27,31 +27,30 @@
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
+  background-size: contain;
   transform: translateY(50%);
   bottom: 50%;
-  left: -50px;
+  left: -60px;
   height: 40px;
   width: 40px;
 }
 
 .c-gallery__group-title.-strength::before {
-  background-image: url("../img/icons/strength3.png");
+  background-image: url("../img/icons/strength2.png");
 }
 
 .c-gallery__group-title.-agility::before {
-  background-image: url("../img/icons/agility3.png");
+  background-image: url("../img/icons/agility2.png");
 }
 
 .c-gallery__group-title.-intelligence::before {
-  background-image: url("../img/icons/intelligence3.png");
+  background-image: url("../img/icons/intelligence2.png");
 }
 
 .c-gallery__heroes {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  /* flex: 0 1 calc(32.33% - 9px); */
-  /* justify-items: space-between; */
   margin-bottom: 7px;
   margin-right: 5px;
   margin-left: 5px;
@@ -69,15 +68,17 @@
   margin-right: 2px;
   margin-left: 2px;
   transition 0.05s opacity linear;
-
-// ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
-// linear - specifies a transition effect with the same speed from start to end
-// ease-in - specifies a transition effect with a slow start
-// ease-out - specifies a transition effect with a slow end
-// ease-in-out
 }
 
 .c-gallery__heroes-img:hover {
   opacity: 0.6;
   // border: 3px solid #3A73A3;
+}
+
+.c-gallery__heroes-img.-selected {
+  border: 3px solid #3A73A3;
+}
+
+.c-gallery__heroes-img.-excluded {
+  border: 3px solid red;
 }

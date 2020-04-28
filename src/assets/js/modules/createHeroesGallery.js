@@ -37,7 +37,9 @@ export function createHeroesGallery() {
           src="${imageSrc}" 
           class="c-gallery__heroes-img" 
           alt="${hero.name}" 
-          title="${hero.name}">
+          title="${hero.name}" 
+          data-hero="${hero.name}"
+          data-selection="">
         </img>`
       );
     });
