@@ -23,24 +23,28 @@ export function createHeroesGallery() {
       );
       
       const imageName = 
-      name.split(" ")
-          .join("_")
-          .split("'")
-          .join("")
-          .toLowerCase();
+        name.split(" ")
+            .join("_")
+            .split("'")
+            .join("")
+            .toLowerCase();
       
       const imageSrc = images[imageName];
       
       heroes.insertAdjacentHTML(
         'beforeend', 
-        `<img 
-          src="${imageSrc}" 
-          class="c-gallery__heroes-img" 
-          alt="${hero.name}" 
-          title="${hero.name}" 
+        `<div 
+          class="c-gallery__hero" 
           data-hero="${hero.name}"
           data-selection="">
-        </img>`
+            <img 
+              src="${imageSrc}" 
+              class="c-gallery__hero-img" 
+              draggable="false"
+              alt="${hero.name}" 
+              title="${hero.name}">
+            </img>
+        </div>`
       );
     });
   });
