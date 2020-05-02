@@ -15,5 +15,4 @@ export function searchHeroes() {
   heroesName.forEach((hero) => {
     container.insertAdjacentHTML('beforeend', `<option value="${hero}">`);
   });
-
 }

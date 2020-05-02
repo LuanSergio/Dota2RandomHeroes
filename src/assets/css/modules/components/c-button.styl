@@ -6,9 +6,9 @@
   letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #111C26;
-  color: #4585C3;
-  border: 1px solid #336391;
+  background-color: $theme.background;
+  color: $theme.text;
+  border: 1px solid $theme.border;
   border-radius: 3px;
 
   -o-transition: .3s;
@@ -23,13 +23,10 @@
 }
 
 .c-button:hover {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
   transition: none;
-  background-color: #263f56;
-  color: #5595D3;
-  border: 1px solid #3A73A3;
+  background-color: $theme.hBackground;
+  color: $theme.hText;
+  border: 1px solid $theme.hBorder;
   -o-transition: .3s;
   -ms-transition: .3s;
   -moz-transition: .3s;
