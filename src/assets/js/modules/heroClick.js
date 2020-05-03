@@ -4,19 +4,28 @@ export function heroClick() {
   const heroes = document.querySelectorAll('[data-hero]');
   const states = {
     selected: '-selected',
-    excluded: '-excluded'
+    excluded: '-excluded',
+    notSelected: '-notSelected'
   }
+
+  const checkState = (hero, state) => {
+    console.log(state);
+    console.log(hero.getAttribute('data-selection'));
+    
+    if((hero.getAttribute('data-selection')) === state){
+      hero.dataset.selection = '';
+    }else {
+      hero.dataset.selection = state;
+    }
+  }
+
   heroes.forEach(hero => {
 
     hero.addEventListener('click', () => {
       hero.classList.toggle(states.selected);
       hero.classList.remove(states.excluded);
-      
-      if((hero.getAttribute('data-selection')) === 'active'){
-        hero.dataset.selection = '';
-      }else {
-        hero.dataset.selection = 'active';
-      }
+      hero.classList.remove(states.notSelected);
+      checkState(hero, 'active');
       deselectHeroes();
     })
 
@@ -24,7 +33,9 @@ export function heroClick() {
       evt.preventDefault();
       hero.classList.remove(states.selected);
       hero.classList.toggle(states.excluded);
-      hero.dataset.selection = 'excluded';
+      // hero.dataset.selection = 'excluded';
+      checkState(hero, 'excluded');
+      deselectHeroes();
     });
   });
 }
