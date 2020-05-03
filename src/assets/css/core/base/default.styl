@@ -24,8 +24,35 @@ body {
   background-image: url("../img/body-background-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  
+  //firefox scrollbar
+  scrollbar-color: $theme.side $theme.main;
+  scrollbar-width: auto;
+
+  // ie and edge custom scroll bar
+  scrollbar-face-color: $theme.main;
+  scrollbar-track-color: $theme.side;
+  scrollbar-arrow-color: $theme.main;
+  scrollbar-shadow-color: $theme.main; //border
 }
 
 body {
   padding-top: 40px;
+}
+
+//chrome custom scroll bar
+body::-webkit-scrollbar {
+  width: 15px;
+  height: 0px;
+}
+body::-webkit-scrollbar-track {
+  background-color: $theme.main;
+  border-radius: 0px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color:  $theme.side;
+  border-radius: 0px;
+}
+body::-webkit-scrollbar-corner {
+  background-color: $theme.main;
 }
