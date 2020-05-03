@@ -1,6 +1,6 @@
 import { heroesList } from '../../../data/index'
 
-export function randomQuantity() {
+export function selectQuantity() {
   const container = document.querySelector('[data-random-quantity]');
   let index = 0;
   heroesList.forEach(list => {

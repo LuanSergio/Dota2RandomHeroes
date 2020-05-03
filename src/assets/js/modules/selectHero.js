@@ -1,6 +1,6 @@
 import { heroesList } from '../../../data/index'
 
-export function searchHeroes() {
+export function selectHero() {
   const heroesName= [];
   const container = document.querySelector('[data-search-hero]');
 
