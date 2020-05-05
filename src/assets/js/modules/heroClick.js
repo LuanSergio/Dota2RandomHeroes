@@ -9,9 +9,6 @@ export function heroClick() {
   }
 
   const checkState = (hero, state) => {
-    console.log(state);
-    console.log(hero.getAttribute('data-selection'));
-    
     if((hero.getAttribute('data-selection')) === state){
       hero.dataset.selection = '';
     }else {
@@ -20,7 +17,6 @@ export function heroClick() {
   }
 
   heroes.forEach(hero => {
-
     hero.addEventListener('click', () => {
       hero.classList.toggle(states.selected);
       hero.classList.remove(states.excluded);
@@ -33,7 +29,6 @@ export function heroClick() {
       evt.preventDefault();
       hero.classList.remove(states.selected);
       hero.classList.toggle(states.excluded);
-      // hero.dataset.selection = 'excluded';
       checkState(hero, 'excluded');
       deselectHeroes();
     });

@@ -1,5 +1,6 @@
 import { heroesList } from '../../../data/index'
 import images from "../../img/heroes/*.png";
+import { heroNameToImageName } from '../utils/heroNameToImageName';
 
 export function createHeroesGallery() {
 
@@ -22,14 +23,9 @@ export function createHeroesGallery() {
         `[data-heroes-group="${list.group}"][data-heroes-faction="${list.faction}"]`
       );
       
-      const imageName = 
-        name.split(" ")
-            .join("_")
-            .split("'")
-            .join("")
-            .toLowerCase();
+      const imageName = heroNameToImageName(name);
       
-      const imageSrc = images[imageName];
+      const imageSource = images[imageName];
       
       heroes.insertAdjacentHTML(
         'beforeend', 
@@ -38,7 +34,7 @@ export function createHeroesGallery() {
           data-hero="${hero.name}"
           data-selection="">
             <img 
-              src="${imageSrc}" 
+              src="${imageSource}" 
               class="c-gallery__hero-img" 
               draggable="false"
               alt="${hero.name}" 
