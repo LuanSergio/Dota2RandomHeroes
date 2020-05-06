@@ -2,7 +2,7 @@ import { heroesList } from '../../../data/index'
 
 export function selectHero() {
   const heroesName= [];
-  const container = document.querySelector('[data-search-hero]');
+  const container = document.querySelector('[data-search-hero-list]');
 
   heroesList.forEach(list => {
     list.heroes.forEach(hero => {
