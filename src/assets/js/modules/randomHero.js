@@ -14,9 +14,9 @@ export function randomHero() {
   })
   
   button.addEventListener('click', () => {
+    container.classList.add('c-random_hero-ctn');
     container.innerHTML = '';
     const quantity = document.querySelector('[data-random-quantity-input]').value;
-    
     console.log(typeof quantity);
     
     for (let i = 0; i < quantity; i++) {
