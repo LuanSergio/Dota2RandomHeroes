@@ -1,15 +1,17 @@
 import { heroesList } from '../../../data/index'
 
 export function filterHeroes() {
-  var heroes;
+  const filterInput = document.querySelector('[data-filter-heroes-input]');
+  let heroes = [];
+  let filteredArray = [];
+
   heroesList.forEach(list => {
-
-    heroes = heroesList.map(() =>{
-     return list.heroes;
-      
-   })
+    heroes.push(list.heroes);
   });
-
-  console.log(heroes);
   
+  if(filterInput.value){
+    filteredArray = heroes.filter(hero => {
+      return hero.roles.includes();
+    })
+  }
 }
