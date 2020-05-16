@@ -1,8 +1,8 @@
 import { rolesList } from '../../../data/index'
 
-export function selectFilter() {
+export function createRolesOptions() {
   const container = document.querySelector('[data-filter-heroes-list]');
-
+  
   rolesList.roles.sort();
   
   rolesList.roles.forEach(role => {

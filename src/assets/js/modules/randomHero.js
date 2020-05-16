@@ -1,17 +1,12 @@
 import { heroesList } from '../../../data/index';
+import { getHeroesArray } from './getHeroesArray'
 import { heroNameToImageName } from '../utils/heroNameToImageName';
 import images from "../../img/heroes/*.png";
 
 export function randomHero() {
   const container = document.querySelector('[data-random-hero');
   const button = document.querySelector('[data-random-button');
-  const heroesArray = [];
-  
-  heroesList.forEach(list => {
-    list.heroes.forEach(hero => {
-      heroesArray.push(hero);
-    });
-  })
+  const heroesArray = getHeroesArray(heroesList);
   
   button.addEventListener('click', () => {
     container.classList.add('c-random_hero-ctn');
