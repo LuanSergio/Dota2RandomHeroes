@@ -1,16 +1,9 @@
 import { heroesList } from '../../../data/index'
+import { getHeroesArray } from './getHeroesArray'
 
 export function selectHero() {
-  const heroesName= [];
   const container = document.querySelector('[data-search-hero-list]');
-
-  heroesList.forEach(list => {
-    list.heroes.forEach(hero => {
-      heroesName.push(hero.name);
-    })
-  })
-
-  heroesName.sort();
+  const heroesName = getHeroesArray(heroesList).map( hero => hero.name).sort();
 
   heroesName.forEach((hero) => {
     container.insertAdjacentHTML('beforeend', `<option value="${hero}">`);

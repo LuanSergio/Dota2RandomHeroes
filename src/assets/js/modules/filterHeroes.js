@@ -1,17 +1,9 @@
 import { heroesList } from '../../../data/index'
+import { getHeroesArray } from './getHeroesArray'
+import { filterByCategory } from './filters/filterByCategory'
 
 export function filterHeroes() {
-  const filterInput = document.querySelector('[data-filter-heroes-input]');
-  let heroes = [];
-  let filteredArray = [];
-
-  heroesList.forEach(list => {
-    heroes.push(list.heroes);
-  });
+  const heroes = getHeroesArray(heroesList);
   
-  if(filterInput.value){
-    filteredArray = heroes.filter(hero => {
-      return hero.roles.includes();
-    })
-  }
+  filterByCategory(heroes);
 }

@@ -1,19 +1,14 @@
 import { heroesList } from '../../../data/index'
+import { getHeroesArray } from './getHeroesArray'
 
 export function selectQuantity() {
   const quantity = document.querySelector('[data-random-quantity-input]');
-  const heroesName= [];
+  const heroesLength = getHeroesArray(heroesList).map( hero => hero.name).length;
 
-  heroesList.forEach(list => {
-    list.heroes.forEach(hero => {
-      heroesName.push(hero.name);
-    })
-  })
-
-  quantity.max = heroesName.length;
+  quantity.max = heroesLength;
 
   quantity.addEventListener('change', () => {
     if (quantity.value < 1) quantity.value = 0;
-    if (quantity.value > heroesName.length) quantity.value = heroesName.length;
+    if (quantity.value > heroesLength) quantity.value = heroesLength;
   })
 }
