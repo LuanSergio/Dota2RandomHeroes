@@ -1,16 +1,17 @@
 import { createHeroesGallery } from './modules/createHeroesGallery';
-import { selectQuantity } from './modules/selectQuantity';
-import { selectHero } from './modules/selectHero';
+import { validateQuantity } from './modules/validateQuantity';
+import { createHerosOptions } from './modules/createHerosOptions';
 import { createRolesOptions } from './modules/createRolesOptions';
 import { filterHeroes } from './modules/filterHeroes';
-import { heroClick } from './modules/heroClick';
+import { addHeroStateOnClick } from './modules/addHeroStateOnClick';
 import { randomHero } from './modules/randomHero';
 
 createHeroesGallery();
-selectQuantity();
-selectHero();
-filterHeroes();
+validateQuantity();
+createHerosOptions();
 createRolesOptions();
-heroClick()
+
+addHeroStateOnClick()
+filterHeroes();
 
 randomHero();
