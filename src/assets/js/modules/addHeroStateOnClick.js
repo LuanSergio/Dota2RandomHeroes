@@ -10,7 +10,7 @@ export function addHeroStateOnClick() {
   }
   
   heroes.forEach(hero => {
-    hero.addEventListener('click', () => { selectHero(hero, states.selected, states.excluded, states.notSelected) });
-    hero.addEventListener('contextmenu', evt => { excludeHero(hero, evt, states.selected, states.excluded) });
+    hero.addEventListener('click', () => { selectHero(hero, states) });
+    hero.addEventListener('contextmenu', evt => { excludeHero(hero, evt, states) });
   });
 }
