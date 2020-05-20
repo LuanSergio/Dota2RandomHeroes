@@ -1,11 +1,36 @@
 <div class="c-settings">
-  <input type="number" min="1" max="" name="randomQuantity" step="1" class="c-settings__input" data-random-quantity-input spellcheck=false type="text" value="1" placeholder="Quantity" />
+  <input 
+    class="c-settings__input" 
+    name="randomQuantity" 
+    placeholder="Quantity" 
+    type="number" 
+    min="1" max="" 
+    step="1" 
+    value="1" 
+    type="text" 
+    data-random-quantity-input spellcheck=false 
+  />
 
-  <input class="c-settings__input" data-filter-heroes-input spellcheck=false type="text" list="filterHeroes" placeholder="Select a filter" />
+  <input 
+    class="c-settings__input" 
+    spellcheck=false 
+    placeholder="Select a filter" 
+    type="text" 
+    list="filterHeroes" 
+    data-filter-heroes-input 
+  />
+  
   <datalist id="filterHeroes" data-filter-heroes-list>
   </datalist>
 
-  <input class="c-settings__input" data-search-hero-input spellcheck=false type="text" list="searchHero" placeholder="Hero name" />
+  <input 
+    class="c-settings__input" 
+    placeholder="Hero name" 
+    type="text" 
+    list="searchHero" 
+    data-search-hero-input spellcheck=false 
+  />
+
   <datalist id="searchHero" data-search-hero-list>
   </datalist>
 
