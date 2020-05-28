@@ -1,6 +1,7 @@
 import { heroesList } from '../../../data/index'
 import { getHeroesArray } from './getHeroesArray'
-import { filterArrayByRole } from './filters/filterArrayByRole'
+import { filterHeroesByRole } from './filters/filterHeroesByRole'
+import  removeHeroesByRole  from './filters/removeHeroesByRole'
 import { showErrorMessage } from './showErrorMessage'
 import { states } from './heroesStates/states'
 import { selectHero } from './heroesStates/selectHero'
@@ -12,7 +13,8 @@ export function filterHeroes() {
   let auxHeroes = getHeroesArray(heroesList);
   const categoryInput = document.querySelector('[data-input-heroes-role]');
   const addButton = document.querySelector('[data-add-button]');
-
+  const removeButton = document.querySelector('[data-remove-button]');
+  
   function noHeroCondition(){
     const settingsContainer = document.querySelector('[data-random-settings]');
     deselectAllHeroes(states);
@@ -31,7 +33,7 @@ export function filterHeroes() {
         }
 
         auxHeroes = heroes;
-        auxHeroes = filterArrayByRole(auxHeroes, categoryInput.value);
+        auxHeroes = filterHeroesByRole(auxHeroes, categoryInput.value);
 
         /*
           Check if there is any hero with that condition, if not, then return a error.
@@ -39,9 +41,10 @@ export function filterHeroes() {
         */
         if(auxHeroes.length === 0) {
           noHeroCondition();
-        } else {
+        } 
+        else {
           const errorContainer = document.querySelector('[data-error-message]');
-            if(errorContainer) {
+          if(errorContainer) {
             errorContainer.remove();
           }
           clearStates(heroes, states);
@@ -57,6 +60,10 @@ export function filterHeroes() {
 
     addButton.addEventListener('click', () => {
       heroes = auxHeroes;
+    });
+
+    removeButton.addEventListener('click', () => {
+      heroes = removeHeroesByRole(heroes, auxHeroes);
     });
     
     return heroes;

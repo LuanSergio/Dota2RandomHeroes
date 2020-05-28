@@ -3,6 +3,7 @@
     class="c-settings__input" 
     name="randomQuantity" 
     placeholder="Quantity" 
+    title="Quantity" 
     type="number" 
     min="1" max="" 
     step="1" 
@@ -14,9 +15,10 @@
   <input 
     class="c-settings__input" 
     spellcheck=false 
-    placeholder="Select a filter" 
+    placeholder="Filter by role" 
+    title="Filter by role"
     type="text" 
-    list="filterHeroes" 
+    list="filterHeroes"
     data-input-heroes-role
   />
   
@@ -25,7 +27,8 @@
 
   <input 
     class="c-settings__input" 
-    placeholder="Hero name" 
+    placeholder="Filter by hero name" 
+    title="Filter by hero name" 
     type="text" 
     list="searchHero" 
     data-search-hero-input spellcheck=false 
@@ -36,4 +39,5 @@
 
   <button class="c-button -add" data-add-button>add</button>
   <button class="c-button -remove" data-remove-button>remove</button>
+  <button class="c-button -clear" data-clear-button>clear</button>
 </div>
