@@ -1,4 +1,4 @@
-export function checkState(hero, state) {
+export default function checkState(hero, state) {
   if((hero.getAttribute('data-selection')) === state){
     hero.dataset.selection = '';
   }else {

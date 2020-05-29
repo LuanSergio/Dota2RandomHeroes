@@ -1,4 +1,4 @@
-import { rolesList } from '../../../data/index'
+import { rolesList } from '../../../../data/index'
 
 export function createRolesOptions() {
   const container = document.querySelector('[data-filter-heroes-list]');

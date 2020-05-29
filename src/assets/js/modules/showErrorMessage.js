@@ -1,4 +1,4 @@
-export function showErrorMessage(container, message) {
+export default function showErrorMessage(container, message) {
   container.insertAdjacentHTML(
     'beforeend',
     `<div class="o-error" data-error-message>
