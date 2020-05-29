@@ -1,6 +1,6 @@
-import { heroesList } from '../../../data/index'
-import images from "../../img/heroes/*.png";
-import { heroNameToImageName } from '../utils/heroNameToImageName';
+import { heroesList } from '../../../../data/index'
+import images from "../../../img/heroes/*.png";
+import heroNameToImageName from '../../utils/heroNameToImageName';
 
 export function createHeroesGallery() {
 

@@ -1,4 +1,4 @@
-export function deselectHeroes() {
+export default function deselectHeroes() {
   const heroes = document.querySelectorAll('[data-selection=""]');
   const active = document.querySelector('[data-selection="active"]');
 

@@ -1,4 +1,4 @@
-export function clearStates(heroes, { selected, excluded, notSelected }) {
+export default function clearStates(heroes, { selected, excluded, notSelected }) {
   heroes.forEach(hero => { 
     const heroName = document.querySelector(`[data-hero="${hero.name}"]`);
     heroName.classList.remove(excluded);

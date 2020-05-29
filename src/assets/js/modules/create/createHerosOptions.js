@@ -1,5 +1,5 @@
-import { heroesList } from '../../../data/index'
-import { getHeroesArray } from './getHeroesArray'
+import { heroesList } from '../../../../data/index'
+import { getHeroesArray } from '../getHeroesArray'
 
 export function createHerosOptions() {
   const container = document.querySelector('[data-search-hero-list]');

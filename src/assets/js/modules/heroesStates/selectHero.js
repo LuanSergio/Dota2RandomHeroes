@@ -1,7 +1,7 @@
-import { checkState } from './checkState'
-import { deselectHeroes } from './deselectHeroes';
+import checkState from './checkState'
+import deselectHeroes from './deselectHeroes';
 
-export function selectHero(hero, { selected, excluded, notSelected }) {
+export default function selectHero(hero, { selected, excluded, notSelected }) {
   hero.classList.remove(excluded);
   hero.classList.remove(notSelected);
   hero.classList.toggle(selected);
