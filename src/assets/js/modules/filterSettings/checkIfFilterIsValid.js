@@ -12,6 +12,6 @@ export default function checkIfFilterIsValid(heroes, auxHeroes){
     if(errorContainer) {
       errorContainer.remove();
     }
-    clearStates(heroes, states);
+    clearStates(states);
   }
 }

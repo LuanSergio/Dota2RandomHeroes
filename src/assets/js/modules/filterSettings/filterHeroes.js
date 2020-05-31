@@ -21,7 +21,7 @@ export function filterHeroes() {
 
       auxHeroes = heroes;
       auxHeroes = filterHeroesByRole(auxHeroes, categoryInput.value);
-
+      
       checkIfFilterIsValid(heroes, auxHeroes);
       addStateToFilteredHeroes(auxHeroes);
     }
@@ -33,5 +33,7 @@ export function filterHeroes() {
 
   removeButton.addEventListener('click', () => {
     heroes = removeHeroesByRole(heroes, auxHeroes);
+    addStateToFilteredHeroes(heroes);
   });
+
 }
