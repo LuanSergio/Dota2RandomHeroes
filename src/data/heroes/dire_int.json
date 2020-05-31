@@ -89,14 +89,14 @@
       "roles": ["Ranged", "Carry", "Nuker", "Disabler"]
     },
     {
+      "name": "Shadow Demon",
+      "id": "19",
+      "roles": ["Ranged", "Support", "Disabler", "Initiator", "Nukerr"]
+    },
+    {
       "name": "Visage",
       "id": "18",
       "roles": ["Ranged", "Support", "Nuker", "Durable", "Disabler", "Pusher"]
-    },
-    {
-      "name": "Oracle",
-      "id": "19",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
     },
     {
       "name": "Winter Wyvern",
