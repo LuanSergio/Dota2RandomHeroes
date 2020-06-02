@@ -20,10 +20,10 @@ export function randomHero() {
 
       container.insertAdjacentHTML(
       'beforeend', 
-      `<div class="c-gallery__hero" data-hero="${hero.name}">
+      `<div class="c-gallery__hero -randomized" data-randomized-hero="${hero.name}">
         <img 
           src="${images[imageName]}" 
-          class="c-gallery__hero-img" 
+          class="c-gallery__hero-img -randomized" 
           draggable="false"
           alt="${hero.name}" 
           title="${hero.name}">
