@@ -27,7 +27,6 @@ input::-webkit-calendar-picker-indicator:hover {
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  // -webkit-appearance: none;
   background-color: blue;
   color: yellow;
 }
@@ -60,7 +59,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: 1px solid $theme.hoverSide;
 }
 
-.c-button.-add, .c-button.-remove{
+.c-button.-add, .c-button.-remove, .c-button.-clear{
   display: inline-block;
   width: 120px;
   height: 27px;
@@ -68,16 +67,20 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 12px;
 }
 
-.c-button.-add::before {
-  content: '\e904';
-  font-family: 'icomoon' !important;
+.c-button::before {
   letter-spacing: 10px;
+  font-family: 'icomoon' !important;
   font-size: 10px;
 }
 
+.c-button.-add::before {
+  content: '\e905';
+}
+
 .c-button.-remove::before {
-  content: '\e903';
-  letter-spacing: 10px;
-  font-family: 'icomoon' !important;
-  font-size: 10px;
+  content: '\e904';
+}
+
+.c-button.-clear::before {
+  content: '\e900';
 }

@@ -5,6 +5,7 @@ import checkIfFilterIsValid from './checkIfFilterIsValid'
 import addStateToFilteredHeroes from './addStateToFilteredHeroes'
 import filterHeroesByRole from '../filters/filterHeroesByRole'
 import removeHeroesByRole  from '../filters/removeHeroesByRole'
+import clearStates from '../heroesStates/clearStates'
 
 export function filterHeroes() {
   let heroes = getHeroesArray(heroesList);
@@ -12,28 +13,38 @@ export function filterHeroes() {
   const categoryInput = document.querySelector('[data-input-heroes-role]');
   const addButton = document.querySelector('[data-add-button]');
   const removeButton = document.querySelector('[data-remove-button]');
+  const clearButton = document.querySelector('[data-clear-button');
   
   categoryInput.addEventListener('change', () => {
     if(categoryInput.value) {
-      if(heroes.length === 0){
-        heroes = getHeroesArray(heroesList);
-      }
 
       auxHeroes = heroes;
       auxHeroes = filterHeroesByRole(auxHeroes, categoryInput.value);
       
       checkIfFilterIsValid(heroes, auxHeroes);
       addStateToFilteredHeroes(auxHeroes);
+      console.log('aux', auxHeroes);
+      console.log('heroes', heroes);
+      
     }
   });
 
   addButton.addEventListener('click', () => {
-    heroes = auxHeroes;
+    if(auxHeroes.length !== 0) {
+      heroes = auxHeroes;
+    }
   });
 
   removeButton.addEventListener('click', () => {
-    heroes = removeHeroesByRole(heroes, auxHeroes);
-    addStateToFilteredHeroes(heroes);
+    if(auxHeroes.length !== 0) {
+      heroes = removeHeroesByRole(heroes, auxHeroes);
+      addStateToFilteredHeroes(heroes);
+    }
+  });
+
+  clearButton.addEventListener('click', () => {
+      heroes = getHeroesArray(heroesList);
+      clearStates();
   });
 
 }
