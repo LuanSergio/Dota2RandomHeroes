@@ -6,7 +6,9 @@ import { filterHeroes } from './modules/filterSettings/filterHeroes';
 import { clearInputOnFocus } from './modules/clearInputOnFocus';
 import { addHeroStateOnClick } from './modules/addHeroStateOnClick';
 import { randomHero } from './modules/randomHero';
+import preventContextMenu from './modules/preventContextMenu';
 
+preventContextMenu();
 createHeroesGallery();
 validateQuantity();
 createHerosOptions();
