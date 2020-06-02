@@ -1,13 +1,14 @@
 import { heroesList } from '../../../../data/index'
 import { getHeroesArray } from '../getHeroesArray'
+import { states } from '../heroesStates/states'
 
-export default function clearStates({ selected, excluded, notSelected }) {
+export default function clearStates() {
   const heroes = getHeroesArray(heroesList);
   heroes.forEach(hero => { 
     const heroName = document.querySelector(`[data-hero="${hero.name}"]`);
-    heroName.classList.remove(excluded);
-    heroName.classList.remove(notSelected);
-    heroName.classList.remove(selected);
+    heroName.classList.remove(states.excluded);
+    heroName.classList.remove(states.notSelected);
+    heroName.classList.remove(states.selected);
     heroName.dataset.selection = '';
   });
 }
