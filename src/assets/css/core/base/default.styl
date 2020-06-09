@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   
-  //firefox scrollbar
+  //firefox custom scrollbar
   scrollbar-color: $theme.side $theme.main;
   scrollbar-width: auto;
 
@@ -63,5 +63,33 @@ optgroup,
 select,
 textarea {
   font-size: 85%;
+}
+
+::placeholder {
+  color: $theme.secondary;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $theme.secondary;
+}
+
+::-ms-input-placeholder {
+  color: $theme.secondary;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+  opacity: 100;
+  background-color: $theme.hoverMain;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  background-color: blue;
 }
 
