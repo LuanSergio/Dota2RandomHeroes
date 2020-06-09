@@ -1,6 +1,6 @@
 export function clearInputOnFocus() {
   const inputGroup = document.querySelectorAll(
-    `[data-input-heroes-role], 
+    `[data-heroes-role-input], 
      [data-search-hero-input]`
     );
 

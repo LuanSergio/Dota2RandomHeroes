@@ -1,8 +1,8 @@
-import invalidCondition from './invalidCondition'
+import showErrorMessage from './showErrorMessage'
 
 export default function checkIfFilterIsValid(heroes, auxHeroes){
   if(auxHeroes.length === 0) {
-    invalidCondition();
+    showErrorMessage('There is no hero with those conditions.');
   } 
   else {
     const errorContainer = document.querySelector('[data-error-message]');

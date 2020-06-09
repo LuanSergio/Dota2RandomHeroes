@@ -1,4 +1,6 @@
 <div class="c-settings" data-random-settings>
+  <ul class="c-settings__tag h-hidden" data-tags-container></ul>
+
   <input 
     class="c-settings__input" 
     name="randomQuantity" 
@@ -15,11 +17,11 @@
   <input 
     class="c-settings__input" 
     spellcheck=false 
-    placeholder="Filter by role" 
+    placeholder="Filter by role"
     title="Filter by role"
     type="text" 
     list="filterHeroes"
-    data-input-heroes-role
+    data-heroes-role-input
   />
   
   <datalist id="filterHeroes" data-filter-heroes-list>
@@ -31,7 +33,8 @@
     title="Filter by hero name" 
     type="text" 
     list="searchHero" 
-    data-search-hero-input spellcheck=false 
+    data-search-hero-input 
+    spellcheck=false 
   />
 
   <datalist id="searchHero" data-search-hero-list>
