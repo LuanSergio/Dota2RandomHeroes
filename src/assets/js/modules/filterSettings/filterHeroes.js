@@ -45,7 +45,7 @@ export function filterHeroes() {
       container.insertAdjacentHTML(
         'beforeend', 
         `<li class="c-settings__tag-item">
-          <button class="c-settings__tag-icon" data-tags-items-remove></button>
+          <button class="c-settings__tag-icon" data-tags-items-remove="${tag.role}"></button>
           <span class="c-settings__tag-text">${tag.role}</span>
         </li>`
       );
@@ -54,6 +54,8 @@ export function filterHeroes() {
 
   function removeTag() {
     const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
+    
+    console.log(removeTagButton[0].getAttribute("data-tags-items-remove"));
     
     removeTagButton.forEach( (button) => {
       button.addEventListener('click', (event) => {
