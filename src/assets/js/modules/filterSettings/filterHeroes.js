@@ -43,12 +43,22 @@ export function filterHeroes() {
     container.innerHTML = '';
     filterTags.forEach((tag) => {
       container.insertAdjacentHTML(
-        'afterbegin', 
+        'beforeend', 
         `<li class="c-settings__tag-item">
-          <span class="c-settings__tag-icon"></span>
-          ${tag.role}
+          <button class="c-settings__tag-icon" data-tags-items-remove></button>
+          <span class="c-settings__tag-text">${tag.role}</span>
         </li>`
       );
+    });
+  }
+
+  function removeTag() {
+    const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
+    
+    removeTagButton.forEach( (button) => {
+      button.addEventListener('click', (event) => {
+        event.target.parentNode.remove();
+      });
     });
   }
   
@@ -58,8 +68,8 @@ export function filterHeroes() {
       if(categoryInput.value) {
         addTag(categoryInput.value, true);
         printTag(filterTags);
+        removeTag();
       }
-      console.log(filterTags);
     }
   });
 
@@ -68,7 +78,7 @@ export function filterHeroes() {
       heroes = removeHeroesByRole(heroes, auxHeroes);
       addStateToFilteredHeroes(heroes);
       addTag(categoryInput.value, false);
-      console.log(filterTags);
+      removeTag();
     }
   });
 
