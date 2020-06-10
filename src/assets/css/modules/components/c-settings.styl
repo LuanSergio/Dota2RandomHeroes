@@ -7,7 +7,7 @@
   border: 1px solid $theme.side;
   border-radius: 3px;
   color: $theme.secondary;
-  height: 30px;
+  height: 35px;
   padding-left: 8px;
   opacity: 0.90;
   text-transform: capitalize;
@@ -24,9 +24,13 @@
   box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
+.c-settings__input.-quantity {
+  max-width: 50px;
+}
+
 .c-settings__input:hover,
 .c-settings__input:focus,
-.c-settings__tag-item {
+.c-settings__tag-item:hover {
   opacity: 1;
   color: $theme.hoverSecondary;
   border: 1px solid $theme.hoverSide;
@@ -35,14 +39,15 @@
 .c-button.-add, .c-button.-remove, .c-button.-clear{
   display: inline-block;
   width: 120px;
-  height: 30px;
-  font-size: 12px;
+  height: 35px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .c-button::before {
   letter-spacing: 10px;
   font-family: 'icomoon' !important;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .c-button.-add::before {
@@ -57,28 +62,51 @@
   content: '\e900';
 }
 
+.c-settings__tag {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .c-settings__tag-item {
-  display: inline-block;
-  font-size: 14px;
   color: $theme.secondary;
+  font-size: 16px;
   background-color: $theme.main;
   border: 1px solid $theme.side;
   border-radius: 3px;
-  padding: 5px;
-  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 0px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.c-settings__tag-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  transform: translateY(0.5px);
 }
 
 .c-settings__tag-icon {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  color: inherit;
   display: inline-block;
-  width: 13px;
-  height: 14px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin-right: 3px;
   position: relative;
-  left: -10px
+  cursor: pointer;
 }
 
 .c-settings__tag-icon::before{
   content: '\e903';
   font-family: 'icomoon' !important;
-  font-size: 13px;
   position: absolute;
+  line-height: 0;
+  font-size: 16px;
+  left: 0;
 }
