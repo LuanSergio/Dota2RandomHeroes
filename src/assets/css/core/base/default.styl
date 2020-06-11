@@ -65,6 +65,15 @@ textarea {
   font-size: 90%;
 }
 
+button:focus,
+input:focus,
+optgroup:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid $colors.astral !important;
+}
+
 ::placeholder {
   color: $theme.secondary;
   opacity: 1;

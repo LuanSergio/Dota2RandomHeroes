@@ -52,15 +52,19 @@ export function filterHeroes() {
     });
   }
 
+  function removeRoleFromArray(role) {
+    filterTags.splice(filterTags.findIndex(tag => tag.role === `${role}`), 1);
+  }
+
   function removeTag() {
     const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
     
-    console.log(removeTagButton[0].getAttribute("data-tags-items-remove"));
-    
     removeTagButton.forEach( (button) => {
       button.addEventListener('click', (event) => {
+        removeRoleFromArray(event.target.getAttribute("data-tags-items-remove"));
         event.target.parentNode.remove();
       });
+
     });
   }
   
@@ -71,6 +75,7 @@ export function filterHeroes() {
         addTag(categoryInput.value, true);
         printTag(filterTags);
         removeTag();
+        console.log(filterTags);
       }
     }
   });
