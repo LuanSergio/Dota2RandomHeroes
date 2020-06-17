@@ -1,4 +1,4 @@
-export function clearInputOnFocus() {
+export default function clearInputOnFocus() {
   const inputGroup = document.querySelectorAll(
     `[data-heroes-role-input], 
      [data-search-hero-input]`

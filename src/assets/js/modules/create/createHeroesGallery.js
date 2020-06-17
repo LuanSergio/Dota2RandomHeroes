@@ -1,8 +1,8 @@
 import { heroesList } from '../../../../data/index'
 import images from "../../../img/heroes/*.png";
-import heroNameToImageName from '../../utils/heroNameToImageName';
+import stringToImageName from '../../utils/stringToImageName';
 
-export function createHeroesGallery() {
+export default function createHeroesGallery() {
 
   heroesList.forEach(list => {
     const container = document.querySelector(`[data-group-ctn="${list.group}"]`);
@@ -23,7 +23,7 @@ export function createHeroesGallery() {
         `[data-heroes-group="${list.group}"][data-heroes-faction="${list.faction}"]`
       );
       
-      const imageName = heroNameToImageName(name);
+      const imageName = stringToImageName(name);
       
       const imageSource = images[imageName];
       

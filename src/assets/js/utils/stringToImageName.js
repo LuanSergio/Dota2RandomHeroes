@@ -1,3 +1,3 @@
-export default function heroNameToImageName(heroName) {
+export default function stringToImageName(heroName) {
   return heroName.split(" ").join("_").split("'").join("").toLowerCase();
 }

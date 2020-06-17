@@ -1,9 +1,9 @@
-import { states } from './heroesStates/states'
+import { states } from './states'
 
-import selectHero from './heroesStates/selectHero'
-import excludeHero from './heroesStates/excludeHero'
+import selectHero from './selectHero'
+import excludeHero from './excludeHero'
 
-export function addHeroStateOnClick() {
+export default function addHeroStateOnClick() {
   const heroes = document.querySelectorAll('[data-hero]');
 
   heroes.forEach(hero => {
