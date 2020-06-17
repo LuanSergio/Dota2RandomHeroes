@@ -1,9 +1,9 @@
-import { heroesList } from '../../../data/index';
-import { getHeroesArray } from './getHeroesArray'
-import heroNameToImageName from '../utils/heroNameToImageName';
-import images from "../../img/heroes/*.png";
+import { heroesList } from '../../../../data/index';
+import getHeroesArray from '../../utils/getHeroesArray'
+import stringToImageName from '../../utils/stringToImageName';
+import images from "../../../img/heroes/*.png";
 
-export function randomHero() {
+export default function randomHero() {
   const container = document.querySelector('[data-random-hero');
   const button = document.querySelector('[data-random-button');
   const heroesArray = getHeroesArray(heroesList);
@@ -16,7 +16,7 @@ export function randomHero() {
     for (let i = 0; i < quantity; i++) {
       const random = Math.round(Math.random() * (heroesArray.length - 1));
       const hero = (heroesArray[random]);
-      const imageName = heroNameToImageName(hero.name);
+      const imageName = stringToImageName(hero.name);
 
       container.insertAdjacentHTML(
       'beforeend', 

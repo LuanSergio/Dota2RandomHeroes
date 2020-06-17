@@ -1,6 +1,6 @@
 import { heroesList } from '../../../../data/index'
-import { getHeroesArray } from '../getHeroesArray'
 import { states } from '../heroesStates/states'
+import getHeroesArray from '../../utils/getHeroesArray'
 
 export default function clearStates() {
   const heroes = getHeroesArray(heroesList);

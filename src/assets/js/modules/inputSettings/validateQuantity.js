@@ -1,7 +1,7 @@
-import { heroesList } from '../../../data/index'
-import { getHeroesArray } from './getHeroesArray'
+import { heroesList } from '../../../../data/index'
+import getHeroesArray from '../../utils/getHeroesArray'
 
-export function validateQuantity() {
+export default function validateQuantity() {
   const quantity = document.querySelector('[data-random-quantity-input]');
   const heroesLength = getHeroesArray(heroesList).map( hero => hero.name).length;
 

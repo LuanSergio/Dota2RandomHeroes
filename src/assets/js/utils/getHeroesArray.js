@@ -1,6 +1,6 @@
 import { heroesList } from '../../../data/index';
 
-export function getHeroesArray() {
+export default function getHeroesArray() {
   const heroes = [];
   
   heroesList.forEach(list => {

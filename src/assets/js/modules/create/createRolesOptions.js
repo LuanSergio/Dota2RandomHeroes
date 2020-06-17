@@ -1,6 +1,6 @@
 import { rolesList } from '../../../../data/index'
 
-export function createRolesOptions() {
+export default function createRolesOptions() {
   const container = document.querySelector('[data-filter-heroes-list]');
   
   rolesList.roles.sort();
