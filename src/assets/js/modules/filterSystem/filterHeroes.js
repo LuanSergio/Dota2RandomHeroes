@@ -7,7 +7,7 @@ import clearStates from '../heroesStates/clearStates'
 import addTag from '../tagSystem/addTag'
 import printTag from '../tagSystem/printTag'
 import removeTag from '../tagSystem/removeTag'
-import showErrorMessage from './showErrorMessage'
+// import showErrorMessage from './showErrorMessage'
 
 export default function filterHeroes() {
   let heroes = getHeroesArray();
@@ -18,34 +18,27 @@ export default function filterHeroes() {
   const clearButton = document.querySelector('[data-clear-button');
   const filterTags = [];
 
-  //create tagSystem
-
   categoryInput.addEventListener('change', () => {
     if(categoryInput.value) {
+      console.log('CHANGED HEROES', heroes);
+      
       auxHeroes = heroes;
-      auxHeroes = filterHeroesByRole(auxHeroes, categoryInput.value);
+      filterHeroesByRole(auxHeroes, categoryInput.value);
       checkIfFilterIsValid(heroes, auxHeroes);
+      
       addStateToFilteredHeroes(auxHeroes);
     }
   });
 
-
-
-  //tags functions
-
-
-  
-
-  //end of tags functions
-
   addButton.addEventListener('click', () => {
+    console.log('heroes added', heroes);
     if(auxHeroes.length !== 0) {
       heroes = auxHeroes;
       if(categoryInput.value) {
-        addTag(filterTags, categoryInput.value, true);
+        addTag(filterTags, categoryInput.value, '-add');
         printTag(filterTags);
-        removeTag(filterTags);
-        console.log(filterTags);
+        removeTag(heroes, filterTags);
+        console.log('heroes OUT added', heroes);
       }
     }
   });
@@ -54,8 +47,11 @@ export default function filterHeroes() {
     if(auxHeroes.length !== 0) {
       heroes = removeHeroesByRole(heroes, auxHeroes);
       addStateToFilteredHeroes(heroes);
-      addTag(categoryInput.value, false);
-      removeTag(filterTags);
+      if(categoryInput.value) {
+        addTag(filterTags, categoryInput.value, '-remove');
+        printTag(filterTags);
+        removeTag(heroes, filterTags);
+      }
     }
   });
 
