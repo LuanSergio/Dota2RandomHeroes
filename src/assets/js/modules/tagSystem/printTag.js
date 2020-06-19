@@ -9,7 +9,7 @@ export default function printTag(filterTags) {
   filterTags.forEach((tag) => {
     container.insertAdjacentHTML(
       'beforeend', 
-      `<li class="c-settings__tag-item">
+      `<li class="c-settings__tag-item ${tag.status}">
         <button class="c-settings__tag-icon" data-tags-items-remove="${tag.role}"></button>
         <span class="c-settings__tag-text">${tag.role}</span>
       </li>`

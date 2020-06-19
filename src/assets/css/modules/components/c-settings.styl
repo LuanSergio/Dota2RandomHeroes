@@ -36,7 +36,7 @@
   border: 1px solid $theme.hoverSide;
 }
 
-.c-button.-add, .c-button.-remove, .c-button.-clear{
+.o-button.-add, .o-button.-remove, .o-button.-clear{
   display: inline-block;
   width: 120px;
   height: 35px;
@@ -44,21 +44,21 @@
   cursor: pointer;
 }
 
-.c-button::before {
+.o-button::before {
   letter-spacing: 10px;
   font-family: 'icomoon' !important;
   font-size: 12px;
 }
 
-.c-button.-add::before {
+.o-button.-add::before {
   content: '\e905';
 }
 
-.c-button.-remove::before {
+.o-button.-remove::before {
   content: '\e904';
 }
 
-.c-button.-clear::before {
+.o-button.-clear::before {
   content: '\e900';
 }
 
@@ -69,16 +69,29 @@
 }
 
 .c-settings__tag-item {
-  color: $theme.secondary;
   font-size: 16px;
-  background-color: $theme.main;
-  border: 1px solid $theme.side;
   border-radius: 3px;
   display: inline-block;
   padding: 5px 10px;
   line-height: 0px;
   text-align: center;
   margin-right: 5px;
+  background-color: $theme.main;
+}
+
+.c-settings__tag-item:hover {
+  background-color: $theme.hoverMain;
+}
+
+.c-settings__tag-item.-add {
+  color: $theme.secondary;
+  border: 1px solid $theme.side;
+}
+
+.c-settings__tag-item.-remove {
+  // color: #a81d0d;
+  color: $theme.excluded;
+  border: 1px solid #cf2311;
 }
 
 .c-settings__tag-text {
@@ -99,6 +112,11 @@
   padding: 0;
   position: relative;
   cursor: pointer;
+  opacity: 0.9;
+}
+
+.c-settings__tag-icon:hover {
+  opacity: 1;
 }
 
 .c-settings__tag-icon::before{
