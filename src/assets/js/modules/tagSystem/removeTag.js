@@ -14,10 +14,10 @@ export default function removeTag(heroesArray, filterTags) {
     button.addEventListener('click', (event) => {
       removeRoleFromArray(filterTags, event.target.getAttribute("data-tags-items-remove"));
       // console.log('filterTags', filterTags);
-      console.log('tags', filterTags);
+      console.log('TAGS ARRAY', filterTags);
     
       refreshFilterArray(heroesArray);
-      heroesArray = getHeroesArray();
+      getHeroesArray(heroesArray);
       // console.log('hereosArray', heroesArray);
       console.log(filterTags.length);
       
@@ -33,13 +33,13 @@ export default function removeTag(heroesArray, filterTags) {
       }
       
       addStateToFilteredHeroes(heroesArray);
-      console.log('heroes remove', heroesArray);
   
       /*
         foreach
         heroes = filterHeroesByRole(auxHeroes, role);
       */
       event.target.parentNode.remove();
+      return console.log('ARRAY AFTER ADDED STATE INSIDE REMOVE', heroesArray);
     });
     
   });

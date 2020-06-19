@@ -6,7 +6,7 @@ import images from "../../../img/heroes/*.png";
 export default function randomHero() {
   const container = document.querySelector('[data-random-hero');
   const button = document.querySelector('[data-random-button');
-  const heroesArray = getHeroesArray(heroesList);
+  const heroesArray = getHeroesArray();
   
   button.addEventListener('click', () => {
     container.classList.add('c-random_hero-ctn');
