@@ -1,7 +1,8 @@
-import refreshFilterArray from '../filterSystem/refreshFilterArray'
+import clearFilterArray from '../filterSystem/clearFilterArray'
 import addStateToFilteredHeroes from '../filterSystem/addStateToFilteredHeroes'
 import filterHeroesByRole from '../filterSystem/filters/filterHeroesByRole'
 import getHeroesArray from '../../utils/getHeroesArray'
+import clearStates from '../heroesStates/clearStates'
 
 export default function removeTag(heroesArray, filterTags) {
   const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
@@ -13,34 +14,21 @@ export default function removeTag(heroesArray, filterTags) {
   removeTagButton.forEach( (button) => {
     button.addEventListener('click', (event) => {
       removeRoleFromArray(filterTags, event.target.getAttribute("data-tags-items-remove"));
-      // console.log('filterTags', filterTags);
-      console.log('TAGS ARRAY', filterTags);
     
-      refreshFilterArray(heroesArray);
+      clearFilterArray(heroesArray);
       getHeroesArray(heroesArray);
-      // console.log('hereosArray', heroesArray);
-      console.log(filterTags.length);
       
       if (filterTags.length !== 0) {
         filterTags.forEach(filter => {
-          console.log('before returning', heroesArray);
-          
           filterHeroesByRole(heroesArray, filter.role);
-          // console.log('array', heroesArray);
-          
-          // console.log('role', filter.role);
         });
+        addStateToFilteredHeroes(heroesArray);
+      } 
+      else {
+        clearStates();
       }
       
-      addStateToFilteredHeroes(heroesArray);
-  
-      /*
-        foreach
-        heroes = filterHeroesByRole(auxHeroes, role);
-      */
       event.target.parentNode.remove();
-      return console.log('ARRAY AFTER ADDED STATE INSIDE REMOVE', heroesArray);
     });
-    
   });
 }

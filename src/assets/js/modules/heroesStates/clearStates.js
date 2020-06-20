@@ -1,4 +1,3 @@
-import { heroesList } from '../../../../data/index'
 import { states } from '../heroesStates/states'
 import getHeroesArray from '../../utils/getHeroesArray'
 
