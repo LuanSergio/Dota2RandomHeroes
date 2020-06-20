@@ -1,13 +1,10 @@
-import refreshFilterArray from '../refreshFilterArray'
+import clearFilterArray from '../clearFilterArray'
 
 export default function filterHeroesByRole(heroes, value) {
   const filteredArray = heroes.filter(hero => hero.roles.includes(value)); 
-  refreshFilterArray(heroes);
-  console.log('FILTERED THAT GOIN INSIDE HEROES', filteredArray);
+  clearFilterArray(heroes);
 
   filteredArray.forEach(role => {
     heroes.push(role);
   });
-  console.log('ARRAY RETURNING FILTER BY ROLE', heroes);
-  
 }
