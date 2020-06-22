@@ -1,6 +1,7 @@
 import clearFilterArray from '../filterSystem/clearFilterArray'
 import addStateToFilteredHeroes from '../filterSystem/addStateToFilteredHeroes'
 import filterHeroesByRole from '../filterSystem/filters/filterHeroesByRole'
+import removeHeroesByRole from '../filterSystem/filters/removeHeroesByRole'
 import getHeroesArray from '../../utils/getHeroesArray'
 import clearStates from '../heroesStates/clearStates'
 
@@ -20,7 +21,11 @@ export default function removeTag(heroesArray, filterTags) {
       
       if (filterTags.length !== 0) {
         filterTags.forEach(filter => {
-          filterHeroesByRole(heroesArray, filter.role);
+          if(filter.status != '-remove') {
+            filterHeroesByRole(heroesArray, filter.role);
+          } else {
+            removeHeroesByRole(heroesArray, filter.role);
+          }
         });
         addStateToFilteredHeroes(heroesArray);
       } 
