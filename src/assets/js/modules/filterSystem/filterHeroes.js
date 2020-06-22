@@ -44,7 +44,7 @@ export default function filterHeroes() {
 
   removeButton.addEventListener('click', () => {
     if(auxHeroes.length !== 0) {
-      heroes = removeHeroesByRole(heroes, auxHeroes);
+      removeHeroesByRole(heroes, categoryInput.value);
       addStateToFilteredHeroes(heroes);
       if(categoryInput.value) {
         addTag(filterTags, categoryInput.value, '-remove');
