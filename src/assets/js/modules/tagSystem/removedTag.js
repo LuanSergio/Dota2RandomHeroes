@@ -5,7 +5,7 @@ import removeHeroesByRole from '../filterSystem/filters/removeHeroesByRole'
 import getHeroesArray from '../../utils/getHeroesArray'
 import clearStates from '../heroesStates/clearStates'
 
-export default function removeTag(heroesArray, filterTags) {
+export default function removedTag(heroesArray, filterTags) {
   const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
   
   const removeRoleFromArray = (filterTags, role) => {
@@ -27,6 +27,7 @@ export default function removeTag(heroesArray, filterTags) {
             removeHeroesByRole(heroesArray, filter.role);
           }
         });
+        
         addStateToFilteredHeroes(heroesArray);
       } 
       else {
