@@ -4,9 +4,10 @@ import addStateToFilteredHeroes from './addStateToFilteredHeroes'
 import filterHeroesByRole from './filters/filterHeroesByRole'
 import removeHeroesByRole  from './filters/removeHeroesByRole'
 import clearStates from '../heroesStates/clearStates' 
+import clearFilterArray from './clearFilterArray' 
 import addTag from '../tagSystem/addTag'
 import printTag from '../tagSystem/printTag'
-import removeTag from '../tagSystem/removeTag'
+import removedTag from '../tagSystem/removedTag'
 
 export default function filterHeroes() {
   let heroes = [];
@@ -36,7 +37,7 @@ export default function filterHeroes() {
       if(categoryInput.value) {
         addTag(filterTags, categoryInput.value, '-add');
         printTag(filterTags);
-        removeTag(heroes, filterTags);
+        removedTag(heroes, filterTags);
         removeTagButton = document.querySelector('[data-tags-items-remove]');
       }
     }
@@ -49,13 +50,21 @@ export default function filterHeroes() {
       if(categoryInput.value) {
         addTag(filterTags, categoryInput.value, '-remove');
         printTag(filterTags);
-        removeTag(heroes, filterTags);
+        removedTag(heroes, filterTags);
       }
     }
   });
 
   clearButton.addEventListener('click', () => {
+      const tagContainer = document.querySelector('[data-tags-container]');
+      const randomContainer = document.querySelector('[data-random-hero');
+      tagContainer.classList.add('h-hidden');
+      tagContainer.innerHTML = '';
+      randomContainer.classList.remove('c-random_hero-ctn');
+      randomContainer.innerHTML = '';
+      clearFilterArray(heroes);
       getHeroesArray(heroes);
       clearStates();
+      clearFilterArray(filterTags);
   });
 }
