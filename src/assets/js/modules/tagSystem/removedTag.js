@@ -1,4 +1,4 @@
-import clearFilterArray from '../filterSystem/clearFilterArray'
+import clearArray from '../../utils/clearArray'
 import addStateToFilteredHeroes from '../filterSystem/addStateToFilteredHeroes'
 import filterHeroesByRole from '../filterSystem/filters/filterHeroesByRole'
 import removeHeroesByRole from '../filterSystem/filters/removeHeroesByRole'
@@ -16,7 +16,7 @@ export default function removedTag(heroesArray, filterTags) {
     button.addEventListener('click', (event) => {
       removeRoleFromArray(filterTags, event.target.getAttribute("data-tags-items-remove"));
     
-      clearFilterArray(heroesArray);
+      clearArray(heroesArray);
       getHeroesArray(heroesArray);
       
       if (filterTags.length !== 0) {
