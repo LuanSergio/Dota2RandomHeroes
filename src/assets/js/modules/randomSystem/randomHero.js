@@ -2,6 +2,7 @@ import { heroesList } from '../../../../data/index';
 import getHeroesArray from '../../utils/getHeroesArray'
 import stringToImageName from '../../utils/stringToImageName';
 import images from "../../../img/heroes/*.png";
+import clearRandomContainer from './clearRandomContainer'
 
 export default function randomHero() {
   const container = document.querySelector('[data-random-hero');
@@ -9,8 +10,8 @@ export default function randomHero() {
   const heroesArray = getHeroesArray();
   
   button.addEventListener('click', () => {
+    clearRandomContainer();
     container.classList.add('c-random_hero-ctn');
-    container.innerHTML = '';
     const quantity = document.querySelector('[data-random-quantity-input]').value || 1;
      
     for (let i = 0; i < quantity; i++) {
