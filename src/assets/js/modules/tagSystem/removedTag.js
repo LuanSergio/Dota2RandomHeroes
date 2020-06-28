@@ -27,10 +27,8 @@ export default function removedTag(heroesArray, filterTags) {
             removeHeroesByRole(heroesArray, filter.role);
           }
         });
-        
         addStateToFilteredHeroes(heroesArray);
-      } 
-      else {
+      } else {
         clearStates();
       }
       
