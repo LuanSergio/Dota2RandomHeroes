@@ -2,6 +2,7 @@ import copyArrayElements from '../../utils/copyArrayElements'
 import addTag from '../tagSystem/addTag'
 import printTag from '../tagSystem/printTag'
 import removedTag from '../tagSystem/removedTag'
+import clearInputs from './clearInputs'
 
 export default function addRoleOnClick(heroes, auxHeroes, filterTags) {
   const addButton = document.querySelector('[data-add-button]');
@@ -18,7 +19,8 @@ export default function addRoleOnClick(heroes, auxHeroes, filterTags) {
         addTag(filterTags, value, '-add');
         printTag(filterTags);
         removedTag(heroes, filterTags);
-      }
+        clearInputs();
+    }
     }
   });
 }
