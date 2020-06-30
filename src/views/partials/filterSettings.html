@@ -4,23 +4,24 @@
   <input 
     class="c-settings__input -quantity" 
     name="randomQuantity" 
+    spellcheck="false"
     placeholder="Qty" 
     title="Quantity" 
     type="number" 
     min="1" max="" 
     step="1"
     type="text" 
-    data-random-quantity-input spellcheck=false 
+    data-random-quantity-input 
   />
 
   <input 
     class="c-settings__input" 
-    spellcheck=false 
+    spellcheck="false"
     placeholder="Filter by role"
     title="Filter by role"
     type="text" 
     list="filterHeroes"
-    data-heroes-role-input
+    data-filter-input="roles"
   />
   
   <datalist id="filterHeroes" data-filter-heroes-list>
@@ -28,15 +29,15 @@
 
   <input 
     class="c-settings__input" 
+    spellcheck="false"
     placeholder="Filter by hero name" 
     title="Filter by hero name" 
     type="text" 
-    list="searchHero" 
-    data-search-hero-input 
-    spellcheck=false 
+    list="filterName" 
+    data-filter-input="name"
   />
 
-  <datalist id="searchHero" data-search-hero-list>
+  <datalist id="filterName" data-search-hero-list>
   </datalist>
 
   <button class="o-button -add" data-add-button>add</button>
