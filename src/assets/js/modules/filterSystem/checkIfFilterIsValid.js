@@ -1,13 +1,9 @@
-import showErrorMessage from './showErrorMessage'
-
-export default function checkIfFilterIsValid(auxHeroes){
-  if(auxHeroes.length === 0) {
-    showErrorMessage('There is no hero with those conditions.');
-  } 
-  else {
-    const errorContainer = document.querySelector('[data-error-message]');
-    if(errorContainer) {
-      errorContainer.remove();
-    }
+export default function checkIfFilterIsValid(heroes, filterType, value) {
+  const checkIfValueIsValid = heroes.filter(hero => hero[filterType].includes(value)).length !== 0;
+  
+  if(checkIfValueIsValid) {
+    return true;
+  } else {
+    return false;
   }
 }

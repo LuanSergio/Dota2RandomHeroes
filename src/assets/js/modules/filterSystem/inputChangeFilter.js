@@ -1,5 +1,5 @@
 import copyArrayElements from '../../utils/copyArrayElements'
-import checkIfFilterIsValid from './checkIfFilterIsValid'
+import checkIfFilterHasHeroes from './checkIfFilterHasHeroes'
 import addStateToFilteredHeroes from './addStateToFilteredHeroes'
 import filterHeroes from './filters/filterHeroes'
 
@@ -12,7 +12,7 @@ export default function inputChangeFilter(heroes, auxHeroes) {
         const filterType = input.getAttribute('data-filter-input');
         copyArrayElements(auxHeroes, heroes);
         filterHeroes(auxHeroes, filterType, input.value);
-        checkIfFilterIsValid(heroes, auxHeroes);
+        checkIfFilterHasHeroes(heroes);
         addStateToFilteredHeroes(auxHeroes);
       }
     });

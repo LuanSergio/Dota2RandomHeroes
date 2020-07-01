@@ -1,12 +1,9 @@
 import showErrorMessage from '../filterSystem/showErrorMessage'
 
-export default function addTag(filterTags, input, status) {
-  const value = input.value;
-  const filterType = input.getAttribute('data-filter-input');
+export default function addTag(filterTags, value, status) {
   
+  const checkIfValueIsValid = Boolean(!(filterTags.some(tag => tag.value === `${value}`)));
   
-  const checkIfValueIsValid = Boolean(!(filterTags.some(tag => tag[filterType] === `${value}`)));
-
   if (checkIfValueIsValid) {
     filterTags.push({value: `${value}`, status: status});
   } else {

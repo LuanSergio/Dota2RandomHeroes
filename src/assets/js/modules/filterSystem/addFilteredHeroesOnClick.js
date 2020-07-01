@@ -3,6 +3,8 @@ import addTag from '../tagSystem/addTag'
 import printTag from '../tagSystem/printTag'
 import removeTag from '../tagSystem/removeTag'
 import clearTextInputs from '../inputSettings/clearTextInputs'
+import checkIfFilterIsValid from './checkIfFilterIsValid'
+import showErrorMessage from './showErrorMessage'
 
 export default function addFilteredHeroesOnClick(heroes, auxHeroes, filterTags) {
   const addButton = document.querySelector('[data-add-button]');
@@ -10,18 +12,19 @@ export default function addFilteredHeroesOnClick(heroes, auxHeroes, filterTags) 
   addButton.addEventListener('click', () => {
     const inputs = document.querySelectorAll('[data-filter-input]');
     
-    if(auxHeroes.lenght !== 0) {
-      copyArrayElements(heroes, auxHeroes);
-
-      inputs.forEach(input => {
-        if(input.value) {
-          const filterType = input.getAttribute('data-filter-input');
-          addTag(filterTags, input, '-add');
+    inputs.forEach(input => {
+      if(input.value) {
+        const filterType = input.getAttribute('data-filter-input');
+        if(checkIfFilterIsValid(auxHeroes, filterType, input.value)) {
+          copyArrayElements(heroes, auxHeroes);
+          addTag(filterTags, input.value, '-add');
           printTag(filterTags);
           removeTag(heroes, filterType, filterTags);
           clearTextInputs();
+        } else {
+          showErrorMessage('There is no hero with those conditions.');
         }
-      });
-    }
+      }
+    });
   });
 }
