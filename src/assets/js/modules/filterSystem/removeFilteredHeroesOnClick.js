@@ -17,7 +17,7 @@ export default function removeFilteredHeroesOnClick(heroes, auxHeroes, filterTag
           const filterType = input.getAttribute('data-filter-input');
           removeFilteredHeroes(heroes, filterType, input.value);
           addStateToFilteredHeroes(heroes);
-          addTag(filterTags, input, '-remove');
+          addTag(filterTags, input.value, '-remove');
           printTag(filterTags);
           removeTag(heroes, filterType, filterTags);
           clearTextInputs();
