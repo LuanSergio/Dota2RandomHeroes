@@ -4,7 +4,7 @@ import stringToImageName from '../../utils/stringToImageName';
 import images from "../../../img/heroes/*.png";
 import clearRandomContainer from './clearRandomContainer'
 
-export default function randomHero() {
+export default function randomHero(heroes) {
   const container = document.querySelector('[data-random-hero');
   const button = document.querySelector('[data-random-button');
   const heroesArray = getHeroesArray();
@@ -15,8 +15,8 @@ export default function randomHero() {
     const quantity = document.querySelector('[data-random-quantity-input]').value || 1;
      
     for (let i = 0; i < quantity; i++) {
-      const random = Math.round(Math.random() * (heroesArray.length - 1));
-      const hero = (heroesArray[random]);
+      const random = Math.round(Math.random() * (heroes.length - 1));
+      const hero = (heroes[random]);
       const imageName = stringToImageName(hero.name);
 
       container.insertAdjacentHTML(

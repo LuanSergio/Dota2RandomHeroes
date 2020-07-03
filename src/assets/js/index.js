@@ -8,13 +8,15 @@ import clearInputOnFocus from './modules/inputSettings/clearInputOnFocus';
 import randomHero from './modules/randomSystem/randomHero';
 import preventContextMenu from './utils/preventContextMenu';
 
+const heroes = [];
+const auxHeroes = [];
+
 preventContextMenu();
-createHeroesGallery();
 validateQuantity();
 createHerosOptions();
 createRolesOptions();
-
 clearInputOnFocus();
+filter(heroes, auxHeroes);
 addHeroStateOnClick()
-filter();
-randomHero();
+createHeroesGallery();
+randomHero(heroes);

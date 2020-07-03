@@ -14,12 +14,12 @@ export default function addFilteredHeroesOnClick(heroes, auxHeroes, filterTags) 
     
     inputs.forEach(input => {
       if(input.value) {
-        const filterType = input.getAttribute('data-filter-input');
-        if(checkIfFilterIsValid(auxHeroes, filterType, input.value)) {
+
+        if(checkIfFilterIsValid(auxHeroes, input.value)) {
           copyArrayElements(heroes, auxHeroes);
           addTag(filterTags, input.value, '-add');
           printTag(filterTags);
-          removeTag(heroes, filterType, filterTags);
+          removeTag(heroes, filterTags);
           clearTextInputs();
         } else {
           showErrorMessage('There is no hero with those conditions.');
