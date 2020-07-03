@@ -6,9 +6,7 @@ import removeFilteredHeroesOnClick from './removeFilteredHeroesOnClick';
 
 import clearButton from './clearButton';
 
-export default function filterHeroes() {
-  const heroes = [];
-  const auxHeroes = [];
+export default function filter(heroes, auxHeroes) {
   const filterTags = [];
   getHeroesArray(heroes);
   getHeroesArray(auxHeroes);
