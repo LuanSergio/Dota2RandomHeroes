@@ -1,6 +1,8 @@
 import clearArray from '../../../utils/clearArray'
+import returnFilterType from '../returnFilterType'
 
-export default function removeFilteredHeroes(heroes, filterType, value) {
+export default function removeFilteredHeroes(heroes, value) {
+  const filterType = returnFilterType(value);
   
   
   const filteredArray = heroes.filter(hero => !hero[filterType].includes(value)); 

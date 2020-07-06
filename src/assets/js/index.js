@@ -9,14 +9,14 @@ import randomHero from './modules/randomSystem/randomHero';
 import preventContextMenu from './utils/preventContextMenu';
 
 const heroes = [];
-const auxHeroes = [];
 
-preventContextMenu();
-validateQuantity();
+createHeroesGallery();
 createHerosOptions();
 createRolesOptions();
+preventContextMenu();
+
+validateQuantity();
 clearInputOnFocus();
-filter(heroes, auxHeroes);
-addHeroStateOnClick()
-createHeroesGallery();
+filter(heroes);
+addHeroStateOnClick(heroes);
 randomHero(heroes);
