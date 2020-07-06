@@ -14,12 +14,11 @@ export default function removeFilteredHeroesOnClick(heroes, auxHeroes, filterTag
     if(auxHeroes.lenght !== 0) {
       inputs.forEach(input => {
         if(input.value) {
-          const filterType = input.getAttribute('data-filter-input');
-          removeFilteredHeroes(heroes, filterType, input.value);
+          removeFilteredHeroes(heroes, input.value);
           addStateToFilteredHeroes(heroes);
           addTag(filterTags, input.value, '-remove');
           printTag(filterTags);
-          removeTag(heroes, filterType, filterTags);
+          removeTag(heroes, filterTags);
           clearTextInputs();
         }
       });
