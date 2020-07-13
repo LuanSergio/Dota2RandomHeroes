@@ -8,7 +8,7 @@ export default function printTag(filterTags) {
   }
 
   container.innerHTML = '';
-
+  
   filterTags.forEach((tag) => {
     container.insertAdjacentHTML(
       'beforeend', 

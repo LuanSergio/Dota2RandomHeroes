@@ -1,12 +1,10 @@
-import copyArrayElements from '../../utils/copyArrayElements'
-import addTag from '../tagSystem/addTag'
 import printTag from '../tagSystem/printTag'
-import removeTag from '../tagSystem/removeTag'
-import clearTextInputs from '../inputSettings/clearTextInputs'
-import checkIfFilterIsValid from './checkIfFilterIsValid'
 import showErrorMessage from './showErrorMessage'
+import clearErrorMessage from './clearErrorMessage'
+import filterHeroes from './filters/filterHeroes'
+import addStateToFilteredHeroes from './addStateToFilteredHeroes'
 
-export default function addFilteredHeroesOnClick(heroes, auxHeroes, filterTags) {
+export default function addFilteredHeroesOnClick(heroes, filterTags) {
   const addButton = document.querySelector('[data-add-button]');
 
   addButton.addEventListener('click', () => {
@@ -14,16 +12,16 @@ export default function addFilteredHeroesOnClick(heroes, auxHeroes, filterTags) 
     
     inputs.forEach(input => {
       if(input.value) {
-
-        if(checkIfFilterIsValid(auxHeroes, input.value)) {
-          copyArrayElements(heroes, auxHeroes);
-          addTag(filterTags, input.value, '-add');
-          printTag(filterTags);
-          removeTag(heroes, filterTags);
-          clearTextInputs();
+        clearErrorMessage();
+        if(filterTags.filter(tag => tag.value.includes(input.value)).length === 0) {
+          filterTags.push({ value: input.value, status: '-add' });
         } else {
-          showErrorMessage('There is no hero with those conditions.');
+          showErrorMessage('You are already using this filter')
         }
+        console.log('tags', filterTags);
+        printTag(filterTags);
+        filterHeroes(heroes, filterTags);
+        addStateToFilteredHeroes(heroes);
       }
     });
   });
