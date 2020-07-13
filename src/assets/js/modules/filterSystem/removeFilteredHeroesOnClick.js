@@ -14,12 +14,17 @@ export default function removeFilteredHeroesOnClick(heroes, auxHeroes, filterTag
     if(auxHeroes.lenght !== 0) {
       inputs.forEach(input => {
         if(input.value) {
-          removeFilteredHeroes(heroes, input.value);
-          addStateToFilteredHeroes(heroes);
-          addTag(filterTags, input.value, '-remove');
+          // removeFilteredHeroes(heroes, input.value);
+          // addStateToFilteredHeroes(heroes);
+          // addTag(filterTags, input.value, '-remove');
+          // printTag(filterTags);
+          // removeTag(heroes, filterTags);
+          // clearTextInputs();
+
+          filterTags.push({ value: input.value, status: '-remove' });
+          console.log('tags', filterTags);
           printTag(filterTags);
-          removeTag(heroes, filterTags);
-          clearTextInputs();
+          
         }
       });
     }

@@ -13,8 +13,6 @@ export default function addHeroStateOnClick(heroes) {
   const heroesElements = document.querySelectorAll('[data-hero]');
   // const clickArray = [];
   const heroesArrayLength = getHeroesArray().map( hero => hero.name).length;
-
-  console.log('acabate', heroesArrayLength);
   
   heroesElements.forEach(hero => {
     hero.addEventListener('click', () => { 

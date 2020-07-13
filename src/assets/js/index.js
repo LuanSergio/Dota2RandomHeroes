@@ -9,6 +9,7 @@ import randomHero from './modules/randomSystem/randomHero';
 import preventContextMenu from './utils/preventContextMenu';
 
 const heroes = [];
+const filterTags = [];
 
 createHeroesGallery();
 createHerosOptions();
@@ -17,6 +18,6 @@ preventContextMenu();
 
 validateQuantity();
 clearInputOnFocus();
-filter(heroes);
+filter(heroes, filterTags);
 addHeroStateOnClick(heroes);
 randomHero(heroes);
