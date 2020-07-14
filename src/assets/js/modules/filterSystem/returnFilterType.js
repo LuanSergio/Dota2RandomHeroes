@@ -8,5 +8,7 @@ export default function returnFilterType(value) {
     return 'name';
   } else if(Object.values(rolesList)[0].includes(value)) {
     return 'roles';
+  } else {
+    return false;
   }
 }

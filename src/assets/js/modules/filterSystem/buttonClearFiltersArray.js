@@ -5,7 +5,7 @@ import clearTagContainer from '../tagSystem/clearTagContainer'
 import clearRandomContainer from '../randomSystem/clearRandomContainer'
 import clearTextInputs from '../inputSettings/clearTextInputs'
 
-export default function clearButton(heroes, filterTags){
+export default function buttonClearFiltersArray(heroes, filterTags){
   const clearButton = document.querySelector('[data-clear-button');
   
   clearButton.addEventListener('click', () => {

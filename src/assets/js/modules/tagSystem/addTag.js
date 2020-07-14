@@ -1,12 +1,19 @@
-import showErrorMessage from '../filterSystem/showErrorMessage'
+import showErrorMessage from '../filterSystem/errors/showErrorMessage'
+import clearErrorMessage from '../filterSystem/errors/clearErrorMessage'
+import clearTextInputs from '../inputSettings/clearTextInputs'
+import removeTag from './removeTag'
+import printTag from './printTag'
 
-export default function addTag(filterTags, value, status) {
-  
-  const checkIfValueIsValid = Boolean(!(filterTags.some(tag => tag.value === `${value}`)));
-  
-  if (checkIfValueIsValid) {
+export default function addTag(heroes, filterTags, value, status) {
+
+  if(filterTags.filter(tag => tag.value.includes(value)).length === 0) {
+    clearErrorMessage();
     filterTags.push({value: `${value}`, status: status});
+    printTag(filterTags)
+    clearTextInputs();
   } else {
     showErrorMessage('You are already using this filter')
   }
+
+  removeTag(heroes, filterTags);
 }
