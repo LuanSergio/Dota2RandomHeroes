@@ -3,11 +3,7 @@ import getHeroesArray from '../../utils/getHeroesArray'
 
 import selectHero from './selectHero'
 import excludeHero from './excludeHero'
-
-import filterHeroes from '../filterSystem/filters/filterHeroes';
-import removeFilteredHeroes from '../filterSystem/filters/removeFilteredHeroes';
-import addStateToFilteredHeroes from '../filterSystem/addStateToFilteredHeroes';
-import addHeroToFilterOnClick from '../filterSystem/addHeroToFilterOnClick';
+// import removeFilteredHeroes from '../filterSystem/filters/removeFilteredHeroes';
 
 export default function addHeroStateOnClick(heroes) {
   const heroesElements = document.querySelectorAll('[data-hero]');
@@ -22,12 +18,12 @@ export default function addHeroStateOnClick(heroes) {
         //clear
         heroes.push(); 
       }
-      addHeroToFilterOnClick(heroes, hero.getAttribute('data-hero'));
+      // addHeroToFilterOnClick(heroes, hero.getAttribute('data-hero'));
       
      } else if (hero.getAttribute('data-selection') === "active") {
         selectHero(hero, states);
         clickArray.splice(clickArray.findIndex(hero => name === name.getAttribute('data-hero')), 1);
-        removeFilteredHeroes(heroes, hero.getAttribute('data-hero'));
+        // removeFilteredHeroes(heroes, hero.getAttribute('data-hero'));
      }
     });
 

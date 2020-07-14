@@ -1,7 +1,6 @@
 import copyArrayElements from '../../utils/copyArrayElements'
-import checkIfFilterIsValid from './checkIfFilterIsValid'
 import addStateToFilteredHeroes from './addStateToFilteredHeroes'
-import filterHeroes from './filters/filterHeroes'
+// import filterHeroes from './filters/filterHeroes'
 
 export default function inputChangeFilter(heroes, auxHeroes) {
   const inputs = document.querySelectorAll('[data-filter-input]');

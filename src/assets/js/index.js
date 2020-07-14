@@ -3,7 +3,7 @@ import createHeroesGallery from './modules/create/createHeroesGallery';
 import createHerosOptions from './modules/create/createHerosOptions';
 import createRolesOptions from './modules/create/createRolesOptions';
 import validateQuantity from './modules/inputSettings/validateQuantity';
-import filter from './modules/filterSystem/filter';
+import filterSystem from './modules/filterSystem/filterSystem';
 import clearInputOnFocus from './modules/inputSettings/clearInputOnFocus';
 import randomHero from './modules/randomSystem/randomHero';
 import preventContextMenu from './utils/preventContextMenu';
@@ -18,6 +18,6 @@ preventContextMenu();
 
 validateQuantity();
 clearInputOnFocus();
-filter(heroes, filterTags);
+filterSystem(heroes, filterTags);
 addHeroStateOnClick(heroes);
 randomHero(heroes);

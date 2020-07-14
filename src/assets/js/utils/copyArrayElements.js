@@ -7,5 +7,4 @@ export default function copyArrayElements(clonedArray, originalArray) {
     clonedArray.push(element);
   });
 
-  console.log('cloned', clonedArray);
 }

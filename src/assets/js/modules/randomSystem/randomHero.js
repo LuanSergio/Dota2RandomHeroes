@@ -7,8 +7,7 @@ import clearRandomContainer from './clearRandomContainer'
 export default function randomHero(heroes) {
   const container = document.querySelector('[data-random-hero');
   const button = document.querySelector('[data-random-button');
-  const heroesArray = getHeroesArray();
-  
+
   button.addEventListener('click', () => {
     clearRandomContainer();
     container.classList.add('c-random_hero-ctn');
