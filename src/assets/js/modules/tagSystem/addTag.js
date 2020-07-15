@@ -1,7 +1,7 @@
 import showErrorMessage from '../filterSystem/errors/showErrorMessage'
 import clearErrorMessage from '../filterSystem/errors/clearErrorMessage'
 import clearTextInputs from '../inputSettings/clearTextInputs'
-import removeTag from './removeTag'
+import removeTagButton from './removeTagButton'
 import printTag from './printTag'
 
 export default function addTag(heroes, filterTags, value, status) {
@@ -15,5 +15,5 @@ export default function addTag(heroes, filterTags, value, status) {
     showErrorMessage('You are already using this filter')
   }
 
-  removeTag(heroes, filterTags);
+  removeTagButton(heroes, filterTags);
 }

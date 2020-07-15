@@ -1,9 +1,11 @@
-export default function deselectAllHeroes({selected, excluded, notSelected}) {
+import  { states } from './states'
+
+export default function deselectAllHeroes() {
   const heroes = document.querySelectorAll('[data-selection]');
   
   heroes.forEach( hero => {
-    hero.classList.remove(selected);
-    hero.classList.remove(excluded);
-    hero.classList.add(notSelected);  
+    hero.classList.remove(states.selected);
+    hero.classList.remove(states.excluded);
+    hero.classList.add(states.notSelected);  
   });
 }

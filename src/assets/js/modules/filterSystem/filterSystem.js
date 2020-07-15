@@ -1,5 +1,6 @@
 import getHeroesArray from '../../utils/getHeroesArray';
 
+import addHeroToFilterArrayOnClick from './addHeroToFilterArrayOnClick'
 import inputChangeFilter from './inputChangeFilter';
 import buttonAddToFiltersArray from './buttonAddToFiltersArray';
 import buttonRemoveFromFiltersArray from './buttonRemoveFromFiltersArray';
@@ -10,6 +11,7 @@ export default function filter(heroes, filterTags) {
   getHeroesArray(heroes);
   getHeroesArray(auxHeroes);
   
+  addHeroToFilterArrayOnClick(heroes, filterTags);
   inputChangeFilter(heroes, auxHeroes);
   
   buttonAddToFiltersArray(heroes, filterTags);
