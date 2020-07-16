@@ -1,19 +1,16 @@
 import copyArrayElements from '../../utils/copyArrayElements'
-import addStateToFilteredHeroes from './addStateToFilteredHeroes'
-// import filterHeroes from './filters/filterHeroes'
+import filterHeroesArray from './filters/filterHeroesArray'
 
-export default function inputChangeFilter(heroes, auxHeroes) {
+export default function inputChangeFilter(heroes, filterTags) {
   const inputs = document.querySelectorAll('[data-filter-input]');
 
-  // inputs.forEach(input => {
-  //   input.addEventListener('change', () => {
-  //     if(input.value) {
-  //       copyArrayElements(auxHeroes, heroes);
-  //       filterHeroes(auxHeroes, input.value);
-  //       if(checkIfFilterIsValid(heroes, input.value)) {
-  //         addStateToFilteredHeroes(auxHeroes);
-  //       }
-  //     }
-  //   });
-  // });
+
+  inputs.forEach(input => {
+    input.addEventListener('change', () => {
+      const auxFilters = [];
+      copyArrayElements(auxFilters, filterTags);
+      auxFilters.push({value: input.value, status: '-add'});
+      filterHeroesArray(heroes, auxFilters);
+    });
+  });
 }

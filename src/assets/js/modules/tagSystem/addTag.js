@@ -7,9 +7,11 @@ import printTag from './printTag'
 export default function addTag(heroes, filterTags, value, status) {
 
   if(filterTags.filter(tag => tag.value.includes(value)).length === 0) {
-    clearErrorMessage();
-    filterTags.push({value: `${value}`, status: status});
-    printTag(filterTags)
+    if(!(heroes.length === 0)) {
+      clearErrorMessage();
+      filterTags.push({value: `${value}`, status: status});
+      printTag(filterTags);
+    }
     clearTextInputs();
   } else {
     showErrorMessage('You are already using this filter')

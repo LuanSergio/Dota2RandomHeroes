@@ -16,8 +16,8 @@ createHerosOptions();
 createRolesOptions();
 preventContextMenu();
 
-validateQuantity();
-clearInputOnFocus();
 filterSystem(heroes, filterTags);
+validateQuantity(heroes);
+clearInputOnFocus(heroes, filterTags);
 addHeroStateOnClick(heroes);
 randomHero(heroes);

@@ -12,7 +12,7 @@ export default function filter(heroes, filterTags) {
   getHeroesArray(auxHeroes);
   
   addHeroToFilterArrayOnClick(heroes, filterTags);
-  inputChangeFilter(heroes, auxHeroes);
+  inputChangeFilter(heroes, filterTags);
   
   buttonAddToFiltersArray(heroes, filterTags);
   buttonRemoveFromFiltersArray(heroes, filterTags);
