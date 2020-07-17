@@ -1,5 +1,13 @@
 .c-settings {
   margin-bottom 40px;
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c-settings__input-group, .c-settings__button-group {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .c-settings__input {
@@ -64,8 +72,11 @@
 
 .c-settings__tag {
   padding: 0;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 790px;
 }
 
 .c-settings__tag-item {
@@ -76,6 +87,7 @@
   line-height: 0px;
   text-align: center;
   margin-right: 5px;
+  margin-bottom: 7px;
   background-color: $theme.main;
 }
 
@@ -125,4 +137,35 @@
   line-height: 0;
   font-size: 15px;
   left: 0;
+}
+
+@media only screen and (max-width: $media.xs) {
+  .c-settings__input-group, .c-settings__button-group {
+   display: block;
+  }
+  .c-settings__input {
+    margin-bottom: 7px;
+  }
+
+  .c-settings__input {
+    display: block;
+  }
+
+  .c-settings__input, .c-settings__input.-quantity, .o-button.-clear {
+    width: calc(100% - 4px);
+    max-width: calc(100% - 4px);
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .o-button.-add, .o-button.-remove, .o-button.-clear  {
+    height: 45px;
+    line-height: 0;
+  }
+
+  .o-button.-add, .o-button.-remove {
+    width: calc(50% - 4px);
+    vertical-align: top;
+    margin-bottom 7px;
+  }
 }

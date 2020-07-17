@@ -1,46 +1,50 @@
 <div class="c-settings" data-random-settings>
   <ul class="c-settings__tag h-hidden" data-tags-container></ul>
 
-  <input 
+  <div class="c-settings__input-group">
+    <input 
     class="c-settings__input -quantity" 
     name="randomQuantity" 
     spellcheck="false"
     placeholder="Qty" 
-    title="Quantity" 
+    title="Qty" 
     type="number" 
     min="1" max="" 
     step="1"
     type="text" 
     data-random-quantity-input 
-  />
+    />
 
-  <input 
-    class="c-settings__input" 
-    spellcheck="false"
-    placeholder="Filter by role"
-    title="Filter by role"
-    type="text" 
-    list="filterHeroes"
-    data-filter-input="roles"
-  />
-  
-  <datalist id="filterHeroes" data-filter-heroes-list>
-  </datalist>
+    <input 
+      class="c-settings__input" 
+      spellcheck="false"
+      placeholder="Filter by role"
+      title="Filter by role"
+      type="text" 
+      list="filterHeroes"
+      data-filter-input="roles"
+    />
+    
+    <datalist id="filterHeroes" data-filter-heroes-list>
+    </datalist>
 
-  <input 
-    class="c-settings__input" 
-    spellcheck="false"
-    placeholder="Filter by hero name" 
-    title="Filter by hero name" 
-    type="text" 
-    list="filterName" 
-    data-filter-input="name"
-  />
+    <input 
+      class="c-settings__input" 
+      spellcheck="false"
+      placeholder="Add Hero to filter" 
+      title="Add Hero to filter" 
+      type="text" 
+      list="filterName" 
+      data-filter-input="name"
+    />
 
-  <datalist id="filterName" data-search-hero-list>
-  </datalist>
+    <datalist id="filterName" data-search-hero-list>
+    </datalist>
+  </div>
 
-  <button class="o-button -add" data-add-button>add</button>
-  <button class="o-button -remove" data-remove-button>remove</button>
-  <button class="o-button -clear" data-clear-button>clear</button>
+  <div class="c-settings__button-group">
+    <button class="o-button -add" data-add-button>add</button>
+    <button class="o-button -remove" data-remove-button>remove</button>
+    <button class="o-button -clear" data-clear-button>clear</button>
+  </div>
 </div>

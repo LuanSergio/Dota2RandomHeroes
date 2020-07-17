@@ -5,7 +5,7 @@ export default function validateQuantity(heroes) {
     const heroesLength = heroes.map(hero => hero.name).length;
 
     quantity.max = heroesLength;
-    if (quantity.value < 1) quantity.value = 0;
+    if (quantity.value < 1) quantity.value = 1;
     if (quantity.value > heroesLength) quantity.value = heroesLength;
   })
 }

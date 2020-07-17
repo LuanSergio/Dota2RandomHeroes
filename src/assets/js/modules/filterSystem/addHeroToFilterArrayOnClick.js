@@ -24,8 +24,6 @@ export default function addHeroToFilterArrayOnClick(heroes, filterTags) {
   galleryHeroes.forEach(element => {
     element.addEventListener('click', () => { 
       const heroName = element.getAttribute('data-hero');
-      console.log('heroName', heroName);
-      console.log('tags', filterTags);
 
       if(checkIfTagExists(filterTags, heroName)) {
         addTag(heroes, filterTags, heroName, '-add');

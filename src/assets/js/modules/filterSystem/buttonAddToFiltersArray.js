@@ -13,7 +13,6 @@ export default function buttonAddToFiltersArray(heroes, filterTags) {
       if(input.value) {
         if(returnFilterType(input.value)) {
           addTag(heroes, filterTags, input.value, '-add');
-          console.log('tags', filterTags);
           filterHeroesArray(heroes, filterTags);
         } else {
           showErrorMessage('This is not a valid filter')
