@@ -28,5 +28,4 @@ export default function filter(heroes, filterTags) {
   else {
     addStateToFilteredHeroes(heroes);
   }
-  console.log('filtered', heroes);
 }
