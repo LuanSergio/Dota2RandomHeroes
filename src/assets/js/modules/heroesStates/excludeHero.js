@@ -1,8 +1,7 @@
 import checkState from './checkState'
 import deselectHeroes from './deselectHeroes';
 
-export default function excludeHero(hero, evt, { selected, excluded }) {
-  evt.preventDefault();
+export default function excludeHero(hero, { selected, excluded }) {
   hero.classList.remove(selected);
   hero.classList.toggle(excluded);
   checkState(hero, 'excluded');
