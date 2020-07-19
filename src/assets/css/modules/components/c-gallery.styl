@@ -122,9 +122,101 @@
   width: 87.5px;
   height: 49.08px;
   transition 0.05s opacity linear;
-
 }
 
 .c-gallery__hero-img:hover {
   opacity: 0.6;
+}
+
+.c-gallery_slide-button {
+  display: none;
+}
+
+@media only screen and (max-width: $media.xs) {
+  .c-settings {
+    margin-bottom: 190px;
+  }
+
+  .c-gallery {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+
+  .c-random_hero-ctn {
+    transform: translateY(-151px);
+  }
+
+  .c-gallery__hero {
+    width: 100.63px;
+    height: 56.44px;
+  }
+
+  .c-gallery__hero-img {
+    width: 100.63px;
+    height: 56.44px;
+  }
+
+  .c-gallery__group {
+    transform: translateY(-151px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .c-gallery__heroes {
+    justify-content: center;
+  }
+
+  .c-gallery__group-title {
+    margin-bottom: 32px;
+  }
+
+  .c-gallery__group-title::before {
+    left: -60px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .c-gallery_slide-button-container {
+    position: sticky;
+    display: flex;
+    top: 50%;
+    z-index: 100;
+    align-self: center;
+  }
+  
+  .c-gallery_slide-button {
+    display: block;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border: none;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  .c-gallery_slide-button::before {
+    font-family: 'icomoon' !important;
+    display: block;
+    font-size: 40px;
+    color: $theme.light;
+  }
+
+  .c-gallery_slide-button.-previus {
+    left: 0px;
+  }
+
+  .c-gallery_slide-button.-previus::before {
+    content: '\e906';
+  }
+
+  .c-gallery_slide-button.-next::before {
+    content: '\e907';
+  }
+
+  .c-gallery_slide-button.-next {
+    right: 0px;
+  }
 }

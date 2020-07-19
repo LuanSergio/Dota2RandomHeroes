@@ -2,10 +2,11 @@
   display: inline-block;
   width: 305px;
   height: 51px;
-  line-height: 51px;
+  line-height: 1;
   font-size: 16px;
   margin-bottom: 30px;
 }
+
 .c-random_hero-ctn {
   display: flex;
   justify-content: center;
@@ -15,7 +16,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .c-gallery__hero-img.-randomized {
   width: 100.63px;
@@ -31,4 +31,21 @@
   -webkit-box-shadow: -3px 3px 12px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -3px 3px 12px 0px rgba(0,0,0,0.75);
   box-shadow: -3px 8px 12px 0px rgba(0,0,0,0.75);
+}
+
+@media only screen and (max-width: $media.xs) {
+  .o-button.-random {
+    width: 305px;
+    height: 61px;
+  }
+
+  .c-gallery__hero.-randomized {
+    width: 110.70px;
+    height: 62.09px;
+  }
+
+  .c-gallery__hero-img.-randomized {
+    width: 110.70px;
+    height: 62.09px;
+  }
 }

@@ -1,11 +1,6 @@
 import { states } from '../heroesStates/states'
-import getHeroesArray from '../../utils/getHeroesArray'
 import addTag from '../tagSystem/addTag'
 import removeTag from '../tagSystem/removeTag'
-
-import selectHero from '../heroesStates/selectHero'
-import excludeHero from '../heroesStates/excludeHero'
-import filter from './filters/filterHeroesArray';
 
 import filterHeroesArray from './filters/filterHeroesArray'
 import printTag from '../tagSystem/printTag'
@@ -29,12 +24,23 @@ export default function addHeroToFilterArrayOnClick(heroes, filterTags) {
         addTag(heroes, filterTags, heroName, '-add');
         filterHeroesArray(heroes, filterTags);
       } else {
-        removeTag(filterTags);
+        removeTag(filterTags, heroName);
         printTag(filterTags);
         filterHeroesArray(heroes, filterTags);
       }
     });
 
-    element.addEventListener('contextmenu', evt => { excludeHero(hero, evt, states) });
+    element.addEventListener('contextmenu', evt => { 
+      const heroName = element.getAttribute('data-hero');
+      element.classList.toggle(states.excluded);
+      if(checkIfTagExists(filterTags, heroName)) {
+        addTag(heroes, filterTags, heroName, '-remove');
+        filterHeroesArray(heroes, filterTags);
+      } else {
+        removeTag(filterTags, heroName);
+        printTag(filterTags);
+        filterHeroesArray(heroes, filterTags);
+      }
+    });
   });
 }

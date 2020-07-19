@@ -26,6 +26,6 @@ export default function filter(heroes, filterTags) {
     showErrorMessage('Could not find any hero with that filters');
   }
   else {
-    addStateToFilteredHeroes(heroes);
+    addStateToFilteredHeroes(heroes, filterTags);
   }
 }

@@ -1,4 +1,5 @@
 export default function printTag(filterTags) {
+
   const container = document.querySelector('[data-tags-container]');
   
   if(filterTags) {

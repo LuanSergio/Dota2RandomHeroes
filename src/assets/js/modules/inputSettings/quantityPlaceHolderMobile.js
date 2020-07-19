@@ -1,4 +1,4 @@
-export default function changeQuantityPlaceHolderOnMobile() {
+export default function quantityPlaceHolderMobile() {
   const width = screen.width;
   const quantity = document.querySelector('[data-random-quantity-input]');
 
