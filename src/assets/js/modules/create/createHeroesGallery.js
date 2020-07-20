@@ -1,5 +1,5 @@
 import { heroesList } from '../../../../data/index'
-import images from "../../../img/heroes/*.png";
+import images from "../../../img/heroes/*.webp";
 import stringToImageName from '../../utils/stringToImageName';
 
 export default function createHeroesGallery() {
