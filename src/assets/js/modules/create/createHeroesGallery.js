@@ -5,7 +5,7 @@ import stringToImageName from '../../utils/stringToImageName';
 export default function createHeroesGallery() {
 
   heroesList.forEach(list => {
-    const container = document.querySelector(`[data-group-ctn="${list.group}"]`);
+    const container = document.querySelector(`[data-group="${list.group}"]`);
     
     container.insertAdjacentHTML(
       'beforeend', 
