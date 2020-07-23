@@ -12,6 +12,7 @@
   "private": true,
   "devDependencies": {
     "posthtml-include": "^1.4.3",
+    "posthtml-modules": "^0.6.2",
     "stylus": "^0.54.7"
   }
 }

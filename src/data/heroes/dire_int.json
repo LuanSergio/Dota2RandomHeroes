@@ -31,7 +31,7 @@
     {
       "name": "Necrophos",
       "id": "6",
-      "roles": ["Ranged", "Carry", "Nuker", "Durable", "Disabler"]
+      "roles": ["Ranged", "Carry", "Nuker", "Durable", "Disabler", "Mid"]
     },
     {
       "name": "Warlock",
@@ -41,17 +41,17 @@
     {
       "name": "Queen of Pain",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Nuker", "Escape"]
+      "roles": ["Ranged", "Carry", "Nuker", "Escape", "Mid"]
     },
     {
       "name": "Death Prophet",
       "id": "9",
-      "roles": ["Ranged", "Carry", "Pusher", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Carry", "Pusher", "Nuker", "Disabler","Mid"]
     },
     {
       "name": "Pugna",
       "id": "10",
-      "roles": ["Ranged", "Nuker", "Pusher"]
+      "roles": ["Ranged", "Nuker", "Pusher", "Mid"]
     },
     {
       "name": "Dazzle",
@@ -61,17 +61,17 @@
     {
       "name": "Leshrac",
       "id": "12",
-      "roles": ["Ranged", "Carry", "Support", "Nuker", "Pusher", "Disabler"]
+      "roles": ["Ranged", "Carry", "Support", "Nuker", "Pusher", "Disabler", "Mid"]
     },
     {
       "name": "Dark Seer",
       "id": "13",
-      "roles": ["Melee", "Initiator", "Jungler", "Escape", "Disabler"]
+      "roles": ["Melee", "Initiator", "Jungler", "Escape", "Disabler", "Offlaner"]
     },
     {
       "name": "Batrider",
       "id": "14",
-      "roles": ["Ranged", "Initiator", "Jungler", "Disabler", "Escape"]
+      "roles": ["Ranged", "Initiator", "Jungler", "Disabler", "Escape", "Offlaner"]
     },
     {
       "name": "Ancient Apparition",
@@ -81,17 +81,17 @@
     {
       "name": "Invoker",
       "id": "16",
-      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Escape", "Pusher"]
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Escape", "Pusher", "Mid"]
     },
     {
       "name": "Outworld Devourer",
       "id": "17",
-      "roles": ["Ranged", "Carry", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Mid"]
     },
     {
       "name": "Shadow Demon",
       "id": "19",
-      "roles": ["Ranged", "Support", "Disabler", "Initiator", "Nukerr"]
+      "roles": ["Ranged", "Support", "Disabler", "Initiator", "Nuker"]
     },
     {
       "name": "Visage",
