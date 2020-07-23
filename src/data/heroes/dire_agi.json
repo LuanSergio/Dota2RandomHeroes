@@ -6,17 +6,17 @@
     {
       "name": "Bloodseeker",
       "id": "1",
-      "roles": ["Melee", "Carry", "Disabler", "Jungler", "Nuker", "Initiator"]
+      "roles": ["Melee", "Carry", "Disabler", "Jungler", "Nuker", "Initiator", "Offlaner"]
     },
     {
       "name": "Shadow Fiend",
       "id": "2",
-      "roles": ["Ranged", "Carry", "Nuker"]
+      "roles": ["Ranged", "Carry", "Nuker", "Mid"]
     },
     {
       "name": "Razor",
       "id": "3",
-      "roles": ["Ranged", "Carry", "Durable", "Nuker", "Pusher"]
+      "roles": ["Ranged", "Carry", "Durable", "Nuker", "Pusher", "Mid"]
     },
     {
       "name": "Venomancer",
@@ -36,22 +36,22 @@
     {
       "name": "Viper",
       "id": "7",
-      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Disabler"]
+      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Disabler", "Mid"]
     },
     {
       "name": "Clinkz",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Escape", "Pusher"]
+      "roles": ["Ranged", "Carry", "Escape", "Pusher", "Mid"]
     },
     {
       "name": "Broodmother",
       "id": "9",
-      "roles": ["Melee", "Carry", "Pusher", "Escape", "Nuker"]
+      "roles": ["Melee", "Carry", "Pusher", "Escape", "Nuker", "Offlaner"]
     },
     {
       "name": "Weaver",
       "id": "10",
-      "roles": ["Ranged", "Carry", "Escape"]
+      "roles": ["Ranged", "Carry", "Escape", "Mid"]
     },
     {
       "name": "Spectre",
@@ -61,12 +61,12 @@
     {
       "name": "Meepo",
       "id": "12",
-      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Pusher"]
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Pusher", "Mid"]
     },
     {
       "name": "Nyx Assassin",
       "id": "13",
-      "roles": ["Melee", "Disabler", "Nuker", "Initiator", "Escape"]
+      "roles": ["Melee", "Disabler", "Nuker", "Initiator", "Escape", "Offlaner"]
     },
     {
       "name": "Slark",
@@ -76,7 +76,7 @@
     {
       "name": "Medusa",
       "id": "15",
-      "roles": ["Ranged", "Carry", "Disabler", "Durable"]
+      "roles": ["Ranged", "Carry", "Disabler", "Durable", "Mid"]
     },
     {
       "name": "Terrorblade",
@@ -86,7 +86,7 @@
     {
       "name": "Arc Warden",
       "id": "17",
-      "roles": ["Ranged", "Carry", "Escape", "Nuker"]
+      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Mid"]
     }
   ]
 }

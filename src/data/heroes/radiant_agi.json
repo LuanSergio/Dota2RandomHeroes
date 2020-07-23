@@ -11,7 +11,7 @@
     {
       "name": "Drow Ranger",
       "id": "2",
-      "roles": ["Ranged", "Carry", "Disabler", "Pusher"]
+      "roles": ["Ranged", "Carry", "Disabler", "Pusher", "Mid"]
     },
     {
       "name": "Juggernaut",
@@ -21,12 +21,12 @@
     {
       "name": "Mirana",
       "id": "4",
-      "roles": ["Ranged", "Carry", "Support", "Escape", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Carry", "Support", "Escape", "Nuker", "Disabler", "Mid", "Offlaner"]
     },
     {
       "name": "Morphling",
       "id": "5",
-      "roles": ["Ranged", "Carry", "Escape", "Durable", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Carry", "Escape", "Durable", "Nuker", "Disabler", "Mid"]
     },
     {
       "name": "Phantom Lancer",
@@ -46,22 +46,22 @@
     {
       "name": "Sniper",
       "id": "9",
-      "roles": ["Ranged", "Carry", "Nuker"]
+      "roles": ["Ranged", "Carry", "Nuker", "Mid"]
     },
     {
       "name": "Templar Assassin",
       "id": "10",
-      "roles": ["Ranged",  "Carry",  "Escape"]
+      "roles": ["Ranged",  "Carry",  "Escape", "Mid"]
     },
     {
       "name": "Luna",
       "id": "11",
-      "roles": ["Ranged", "Carry", "Nuker", "Pusher"]
+      "roles": ["Ranged", "Carry", "Nuker", "Pusher", "Mid"]
     },
     {
       "name": "Bounty Hunter",
       "id": "12",
-      "roles": ["Melee", "Escape", "Nuker"]
+      "roles": ["Melee", "Escape", "Nuker", "Offlaner"]
     },
     {
       "name": "Ursa",
@@ -71,7 +71,7 @@
     {
       "name": "Gyrocopter",
       "id": "14",
-      "roles": ["Ranged", "Carry", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Mid"]
     },
     {
       "name": "Lone Druid",
@@ -91,7 +91,7 @@
     {
       "name": "Ember Spirit",
       "id": "18",
-      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator"]
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Mid"]
     },
     {
       "name": "Monkey King",
@@ -101,7 +101,7 @@
     {
       "name": "Pangolier",
       "id": "20",
-      "roles": ["Melee", "Carry", "Nuker", "Disabler", "Durable", "Escape", "Initiator"]
+      "roles": ["Melee", "Carry", "Nuker", "Disabler", "Durable", "Escape", "Initiator", "Offlaner"]
     }
   ]
 }

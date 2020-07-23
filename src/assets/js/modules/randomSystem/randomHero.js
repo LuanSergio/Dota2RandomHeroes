@@ -9,7 +9,7 @@ export default function randomHero(heroes) {
 
   button.addEventListener('click', () => {
     clearRandomContainer();
-    container.classList.add('c-random_hero-ctn');
+    // container.classList.add('c-random_hero-ctn');
     const quantity = document.querySelector('[data-random-quantity-input]').value || 1;
     const auxHeroes = [];
 

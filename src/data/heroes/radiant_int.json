@@ -11,27 +11,27 @@
     {
       "name": "Puck",
       "id": "2",
-      "roles": ["Ranged", "Initiator", "Disabler", "Escape", "Nuker"]
+      "roles": ["Ranged", "Initiator", "Disabler", "Escape", "Nuker", "Mid"]
     },
     {
       "name": "Storm Spirit",
       "id": "3",
-      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Initiator", "Disabler"]
+      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Initiator", "Disabler", "Mid"]
     },
     {
       "name": "Windranger",
       "id": "4",
-      "roles": ["Ranged", "Carry", "Support", "Disabler", "Escape", "Nuker"]
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Escape", "Nuker", "Offlaner", "Mid"]
     },
     {
       "name": "Zeus",
       "id": "5",
-      "roles": ["Ranged", "Nuker"]
+      "roles": ["Ranged", "Nuker", "Mid"]
     },
     {
       "name": "Lina",
       "id": "6",
-      "roles": ["Ranged", "Support", "Carry", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Support", "Carry", "Nuker", "Disabler", "Mid"]
     },
     {
       "name": "Shadow Shaman",
@@ -41,7 +41,7 @@
     {
       "name": "Tinker",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Nuker", "Pusher"]
+      "roles": ["Ranged", "Carry", "Nuker", "Pusher", "Mid"]
     },
     {
       "name": "Nature's Prophet",
@@ -66,7 +66,7 @@
     {
       "name": "Silencer",
       "id": "13",
-      "roles": ["Ranged", "Carry", "Support", "Disabler", "Initiator", "Nuker"]
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Initiator", "Nuker", "Mid"]
     },
     {
       "name": "Ogre Magi",
@@ -91,7 +91,7 @@
     {
       "name": "Skywrath Mage",
       "id": "18",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Mid"]
     },
     {
       "name": "Oracle",
@@ -101,7 +101,7 @@
     {
       "name": "Techies",
       "id": "20",
-      "roles": ["Ranged", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Nuker", "Disabler", "Offlaner"]
     },
     {
       "name": "Dark Willow",
@@ -111,7 +111,7 @@
     {
       "name": "Void Spirit",
       "id": "22",
-      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler"]
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Mid"]
     }
   ]
 }
