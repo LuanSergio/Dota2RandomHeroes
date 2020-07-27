@@ -6,117 +6,117 @@
     {
       "name": "Earthshaker",
       "id": "1",
-      "roles": ["Melee", "Support", "Initiator", "Disabler", "Nuker"]
+      "roles": ["Melee", "Support", "Initiator", "Disabler", "Nuker", "Strength"]
     },
     {
       "name": "Sven",
       "id": "2",
-      "roles": ["Melee", "Carry", "Disabler", "Initiator", "Durable", "Nuker"]
+      "roles": ["Melee", "Carry", "Disabler", "Initiator", "Durable", "Nuker", "Strength"]
     },
     {
       "name": "Tiny",
       "id": "3",
-      "roles": ["Melee", "Carry", "Nuker", "Pusher", "Initiator", "Durable", "Disabler", "Offlaner", "Mid"]
+      "roles": ["Melee", "Carry", "Nuker", "Pusher", "Initiator", "Durable", "Disabler", "Offlaner", "Mid", "Strength"]
     },
     {
       "name": "Kunkka",
       "id": "5",
-      "roles": ["Melee", "Carry", "Support", "Disabler", "Initiator", "Durable", "Nuker", "Offlaner", "Mid"]
+      "roles": ["Melee", "Carry", "Support", "Disabler", "Initiator", "Durable", "Nuker", "Offlaner", "Mid", "Strength"]
     },
     {
       "name": "Beastmaster",
       "id": "6",
-      "roles": ["Melee", "Initiator", "Disabler", "Durable", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Initiator", "Disabler", "Durable", "Nuker", "Offlaner", "Strength"]
     },
     {
       "name": "Dragon Knight",
       "id": "7",
-      "roles": ["Melee", "Carry", "Pusher", "Durable", "Disabler", "Initiator", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Carry", "Pusher", "Durable", "Disabler", "Initiator", "Nuker", "Offlaner", "Strength"]
     },
     {
       "name": "Clockwerk",
       "id": "8",
-      "roles": ["Melee", "Initiator", "Disabler", "Durable", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Initiator", "Disabler", "Durable", "Nuker", "Offlaner", "Strength"]
     },
     {
       "name": "Omniknight",
       "id": "9",
-      "roles": ["Melee", "Support", "Durable", "Nuker"]
+      "roles": ["Melee", "Support", "Durable", "Nuker", "Strength"]
     },
     {
       "name": "Huskar",
       "id": "10",
-      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Mid"]
+      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Mid", "Strength"]
     },
     {
       "name": "Alchemist",
       "id": "11",
-      "roles": ["Melee", "Carry", "Support", "Durable", "Disabler", "Initiator", "Nuker", "Mid"]
+      "roles": ["Melee", "Carry", "Support", "Durable", "Disabler", "Initiator", "Nuker", "Mid", "Strength"]
     },
     {
       "name": "Brewmaster",
       "id": "12",
-      "roles": ["Melee", "Carry", "Initiator", "Durable", "Disabler", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Carry", "Initiator", "Durable", "Disabler", "Nuker", "Offlaner", "Strength"]
     },
     {
       "name": "Treant Protector",
       "id": "13",
-      "roles": ["Melee", "Support", "Initiator", "Durable", "Disabler", "Escape"]
+      "roles": ["Melee", "Support", "Initiator", "Durable", "Disabler", "Escape", "Strength"]
     },
     {
       "name": "Io",
       "id": "14",
-      "roles": ["Ranged", "Support", "Escape", "Nuker"]
+      "roles": ["Ranged", "Support", "Escape", "Nuker", "Strength"]
     },
     {
       "name": "Centaur Warrunner",
       "id": "15",
-      "roles": ["Melee", "Durable", "Initiator", "Disabler", "Nuker", "Escape", "Offlaner"]
+      "roles": ["Melee", "Durable", "Initiator", "Disabler", "Nuker", "Escape", "Offlaner", "Strength"]
     },
     {
       "name": "Timbersaw",
       "id": "16",
-      "roles": ["Melee", "Nuker", "Durable", "Escape", "Offlaner"]
+      "roles": ["Melee", "Nuker", "Durable", "Escape", "Offlaner", "Strength"]
     },
     {
       "name": "Bristleback",
       "id": "17",
-      "roles": ["Melee", "Carry", "Durable", "Initiator", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Carry", "Durable", "Initiator", "Nuker", "Offlaner", "Strength"]
     },
     {
       "name": "Tusk",
       "id": "18",
-      "roles": ["Melee", "Initiator", "Disabler", "Nuker"]
+      "roles": ["Melee", "Initiator", "Disabler", "Nuker", "Strength"]
     },
     {
       "name": "Elder Titan",
       "id": "19",
-      "roles": ["Melee", "Initiator", "Disabler", "Nuker", "Durable", "Offlaner"]
+      "roles": ["Melee", "Initiator", "Disabler", "Nuker", "Durable", "Offlaner", "Strength"]
     },
     {
       "name": "Legion Commander",
       "id": "20",
-      "roles": ["Melee", "Carry", "Disabler", "Initiator", "Durable", "Nuker"]
+      "roles": ["Melee", "Carry", "Disabler", "Initiator", "Durable", "Nuker", "Strength"]
     },
     {
       "name": "Earth Spirit",
       "id": "21",
-      "roles": ["Melee", "Nuker", "Escape", "Disabler", "Initiator", "Durable", "Offlaner"]
+      "roles": ["Melee", "Nuker", "Escape", "Disabler", "Initiator", "Durable", "Offlaner", "Strength"]
     },
     {
       "name": "Phoenix",
       "id": "22",
-      "roles": ["Ranged", "Support", "Nuker", "Initiator", "Escape", "Disabler"]
+      "roles": ["Ranged", "Support", "Nuker", "Initiator", "Escape", "Disabler", "Strength"]
     },
     {
       "name": "Mars",
       "id": "23",
-      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Durable", "Offlaner"]
+      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Durable", "Offlaner", "Strength"]
     },
     {
       "name": "Snapfire",
       "id": "24",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Offlaner"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Offlaner", "Strength"]
     }
   ]
 }

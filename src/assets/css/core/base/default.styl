@@ -21,10 +21,10 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   font-family: $fontfamily.main;
-  background-image: url("../img/body-background-4.jpg");
+  background-image: url("../img/body-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
+  font-size: 1em;
   //firefox custom scrollbar
   scrollbar-color: $theme.side $theme.main;
   scrollbar-width: auto;
@@ -103,3 +103,14 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: blue;
 }
 
+@media only screen and (min-width: $media.lg) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: $media.lg-plus) {
+  body {
+    font-size: 2em;
+  }
+}

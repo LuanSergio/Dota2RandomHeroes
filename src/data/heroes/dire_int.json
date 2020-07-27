@@ -6,107 +6,107 @@
     {
       "name": "Bane",
       "id": "1",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Durable"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Durable", "Intelligence"]
     },
     {
       "name": "Lich",
       "id": "2",
-      "roles": ["Ranged", "Support", "Nuker"]
+      "roles": ["Ranged", "Support", "Nuker", "Intelligence"]
     },
     {
       "name": "Lion",
       "id": "3",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator", "Intelligence"]
     },
     {
       "name": "Witch Doctor",
       "id": "4",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Intelligence"]
     },
     {
       "name": "Enigma",
       "id": "5",
-      "roles": ["Ranged", "Disabler", "Jungler", "Initiator", "Pusher"]
+      "roles": ["Ranged", "Disabler", "Jungler", "Initiator", "Pusher", "Intelligence"]
     },
     {
       "name": "Necrophos",
       "id": "6",
-      "roles": ["Ranged", "Carry", "Nuker", "Durable", "Disabler", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Durable", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Warlock",
       "id": "7",
-      "roles": ["Ranged", "Support", "Initiator", "Disabler"]
+      "roles": ["Ranged", "Support", "Initiator", "Disabler", "Intelligence"]
     },
     {
       "name": "Queen of Pain",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Nuker", "Escape", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Escape", "Mid", "Intelligence"]
     },
     {
       "name": "Death Prophet",
       "id": "9",
-      "roles": ["Ranged", "Carry", "Pusher", "Nuker", "Disabler","Mid"]
+      "roles": ["Ranged", "Carry", "Pusher", "Nuker", "Disabler","Mid", "Intelligence"]
     },
     {
       "name": "Pugna",
       "id": "10",
-      "roles": ["Ranged", "Nuker", "Pusher", "Mid"]
+      "roles": ["Ranged", "Nuker", "Pusher", "Mid", "Intelligence"]
     },
     {
       "name": "Dazzle",
       "id": "11",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Intelligence"]
     },
     {
       "name": "Leshrac",
       "id": "12",
-      "roles": ["Ranged", "Carry", "Support", "Nuker", "Pusher", "Disabler", "Mid"]
+      "roles": ["Ranged", "Carry", "Support", "Nuker", "Pusher", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Dark Seer",
       "id": "13",
-      "roles": ["Melee", "Initiator", "Jungler", "Escape", "Disabler", "Offlaner"]
+      "roles": ["Melee", "Initiator", "Jungler", "Escape", "Disabler", "Offlaner", "Intelligence"]
     },
     {
       "name": "Batrider",
       "id": "14",
-      "roles": ["Ranged", "Initiator", "Jungler", "Disabler", "Escape", "Offlaner"]
+      "roles": ["Ranged", "Initiator", "Jungler", "Disabler", "Escape", "Offlaner", "Intelligence"]
     },
     {
       "name": "Ancient Apparition",
       "id": "15",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Intelligence"]
     },
     {
       "name": "Invoker",
       "id": "16",
-      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Escape", "Pusher", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Escape", "Pusher", "Mid", "Intelligence"]
     },
     {
       "name": "Outworld Devourer",
       "id": "17",
-      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Shadow Demon",
       "id": "19",
-      "roles": ["Ranged", "Support", "Disabler", "Initiator", "Nuker"]
+      "roles": ["Ranged", "Support", "Disabler", "Initiator", "Nuker", "Intelligence"]
     },
     {
       "name": "Visage",
       "id": "18",
-      "roles": ["Ranged", "Support", "Nuker", "Durable", "Disabler", "Pusher"]
+      "roles": ["Ranged", "Support", "Nuker", "Durable", "Disabler", "Pusher", "Intelligence"]
     },
     {
       "name": "Winter Wyvern",
       "id": "20",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Intelligence"]
     },
     {
       "name": "Grimstroke",
       "id": "21",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Intelligence"]
     }
   ]
 }

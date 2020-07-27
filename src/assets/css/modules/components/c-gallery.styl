@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: em(40);
   align-items: flex-start;
 }
 
@@ -19,8 +19,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: em(10);
+  margin-bottom: em(20);
   color: $theme.light;
 }
 
@@ -32,9 +32,9 @@
   background-size: contain;
   transform: translateY(50%);
   bottom: 50%;
-  left: -60px;
-  height: 40px;
-  width: 40px;
+  left: rem(-60);
+  height: rem(40);
+  width: rem(40);
 }
 
 .c-gallery__group-title.-strength::before {
@@ -53,38 +53,36 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  margin-bottom: 7px;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding-left: 2px;
-  padding-right: 2px;
+  margin-bottom: em(7);
+  margin-right: em(5);
+  margin-left: em(5);
+  padding-left: em(2);
+  padding-right: em(2);
   min-height: 320px;
 }
 
 .c-gallery__hero {
   position: relative;
-  width: 87.5px;
-  height: 49.08px;
-  margin-bottom: 4px;
-  margin-right: 2px;
-  margin-left: 2px;
+  width: em(87.5);
+  height: em(49.08);
+  margin-bottom: em(4);
+  margin-right: em(2);
+  margin-left: em(2);
   transition-duration: 1s;
-  color: #ffffff;
 }
 
 .c-gallery__hero.-selected::after {
   content: '\e901';
   font-family: 'icomoon' !important;
-  font-size: 20px;
+  font-size: em(20);
   color: $theme.checked;
   text-shadow: 2px 2px 2px #000000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
   position: absolute;
   bottom: 0;
-  right: 2px;
-  width: 23px;
-  height: 23px;
+  right: em(2);
+  width: em(23);
   transition: 0.15s;
   transition-timing-function: linear;
 }
@@ -92,16 +90,16 @@
 .c-gallery__hero.-excluded::after {
   content: '\e902';
   font-family: 'icomoon' !important;
-  font-size: 18px;
+  font-size: em(18);
   color:  $theme.excluded;
   text-shadow: 2px 2px 2px #000000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
   position: absolute;
   bottom: 0;
-  right: 2px;
-  width: 23px;
-  height: 23px;
+  right: em(2);
+  width: em(23);
+  height: em(21);
   transition: 0.15s;
   transition-timing-function: linear;
 }
@@ -119,8 +117,8 @@
 .c-gallery__hero-img {
   position: relative;
   display: flex;
-  width: 87.5px;
-  height: 49.08px;
+  width: em(87.5);
+  height: em(49.08);
   transition 0.05s opacity linear;
 }
 
@@ -131,6 +129,15 @@
 .c-gallery_slide-button {
   display: none;
 }
+
+@media only screen and (min-width: $media.lg) {
+.c-gallery__group-title::before {
+  left: em(-45);
+  height: em(30);
+  width: em(30);
+}
+}
+
 
 @media only screen and (max-width: $media.xs) {
   .c-gallery {
