@@ -1,6 +1,6 @@
 .c-header {
   position: absolute;
-  max-width: 1160px;
+  max-width: em(1160);
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -10,7 +10,7 @@
 .c-header__logo {
   vertical-align: top;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: em(20);
 }
 
 .c-header__logo::after {
@@ -28,6 +28,17 @@
 
 .c-header__logo-img {
   max-width: 120px;
+}
+
+@media only screen and (min-width: $media.lg) {
+  .c-header__logo-img {
+    max-width: 180px;
+  }
+
+  .c-header__logo::after {
+    height: 1200px;
+    width: 1200px;
+  }
 }
 
 @media only screen and (max-width: $media.xs) {

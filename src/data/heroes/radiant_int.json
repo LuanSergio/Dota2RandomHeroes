@@ -6,112 +6,112 @@
     {
       "name": "Crystal Maiden",
       "id": "1",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Jungler"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Jungler", "Intelligence"]
     },
     {
       "name": "Puck",
       "id": "2",
-      "roles": ["Ranged", "Initiator", "Disabler", "Escape", "Nuker", "Mid"]
+      "roles": ["Ranged", "Initiator", "Disabler", "Escape", "Nuker", "Mid", "Intelligence"]
     },
     {
       "name": "Storm Spirit",
       "id": "3",
-      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Initiator", "Disabler", "Mid"]
+      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Initiator", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Windranger",
       "id": "4",
-      "roles": ["Ranged", "Carry", "Support", "Disabler", "Escape", "Nuker", "Offlaner", "Mid"]
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Escape", "Nuker", "Offlaner", "Mid", "Intelligence"]
     },
     {
       "name": "Zeus",
       "id": "5",
-      "roles": ["Ranged", "Nuker", "Mid"]
+      "roles": ["Ranged", "Nuker", "Mid", "Intelligence"]
     },
     {
       "name": "Lina",
       "id": "6",
-      "roles": ["Ranged", "Support", "Carry", "Nuker", "Disabler", "Mid"]
+      "roles": ["Ranged", "Support", "Carry", "Nuker", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Shadow Shaman",
       "id": "7",
-      "roles": ["Ranged", "Support", "Pusher", "Disabler", "Nuker", "Initiator"]
+      "roles": ["Ranged", "Support", "Pusher", "Disabler", "Nuker", "Initiator", "Intelligence"]
     },
     {
       "name": "Tinker",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Nuker", "Pusher", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Pusher", "Mid", "Intelligence"]
     },
     {
       "name": "Nature's Prophet",
       "id": "9",
-      "roles": ["Ranged", "Carry", "Jungler", "Pusher", "Escape", "Nuker"]
+      "roles": ["Ranged", "Carry", "Jungler", "Pusher", "Escape", "Nuker", "Intelligence"]
     },
     {
       "name": "Enchantress",
       "id": "10",
-      "roles": ["Ranged", "Support", "Jungler", "Pusher", "Durable", "Disabler"]
+      "roles": ["Ranged", "Support", "Jungler", "Pusher", "Durable", "Disabler", "Intelligence"]
     },
     {
       "name": "Jakiro",
       "id": "11",
-      "roles": ["Ranged", "Support", "Nuker", "Pusher", "Disable"]
+      "roles": ["Ranged", "Support", "Nuker", "Pusher", "Disable", "Intelligence"]
     },
     {
       "name": "Chen",
       "id": "12",
-      "roles": ["Ranged", "Support", "Jungler", "Pusher"]
+      "roles": ["Ranged", "Support", "Jungler", "Pusher", "Intelligence"]
     },
     {
       "name": "Silencer",
       "id": "13",
-      "roles": ["Ranged", "Carry", "Support", "Disabler", "Initiator", "Nuker", "Mid"]
+      "roles": ["Ranged", "Carry", "Support", "Disabler", "Initiator", "Nuker", "Mid", "Intelligence"]
     },
     {
       "name": "Ogre Magi",
       "id": "14",
-      "roles": ["Melee", "Support", "Nuker", "Disabler", "Durable", "Initiator"]
+      "roles": ["Melee", "Support", "Nuker", "Disabler", "Durable", "Initiator", "Intelligence"]
     },
     {
       "name": "Rubick",
       "id": "15",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Intelligence"]
     },
     {
       "name": "Disruptor",
       "id": "16",
-      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator"]
+      "roles": ["Ranged", "Support", "Disabler", "Nuker", "Initiator", "Intelligence"]
     },
     {
       "name": "Keeper of the Light",
       "id": "17",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Jungler"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Jungler", "Intelligence"]
     },
     {
       "name": "Skywrath Mage",
       "id": "18",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Mid"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Mid", "Intelligence"]
     },
     {
       "name": "Oracle",
       "id": "19",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Intelligence"]
     },
     {
       "name": "Techies",
       "id": "20",
-      "roles": ["Ranged", "Nuker", "Disabler", "Offlaner"]
+      "roles": ["Ranged", "Nuker", "Disabler", "Offlaner", "Intelligence"]
     },
     {
       "name": "Dark Willow",
       "id": "21",
-      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape"]
+      "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Intelligence"]
     },
     {
       "name": "Void Spirit",
       "id": "22",
-      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Mid"]
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Mid", "Intelligence"]
     }
   ]
 }

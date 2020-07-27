@@ -1,7 +1,7 @@
 .c-settings {
-  margin-bottom 40px;
-  margin-top: 10px;
-  max-width: 1160px;
+  margin-bottom em(40);
+  margin-top: em(10);
+  max-width: em(1160);
   margin-right: auto;
   margin-left: auto;
 }
@@ -16,8 +16,8 @@
   border: 1px solid $theme.side;
   border-radius: 3px;
   color: $theme.secondary;
-  height: 35px;
-  padding-left: 8px;
+  height: rem(35);
+  padding-left: rem(8);
   opacity: 0.90;
   text-transform: capitalize;
   vertical-align: top;
@@ -34,7 +34,7 @@
 }
 
 .c-settings__input.-quantity {
-  max-width: 60px;
+  max-width: em(60);
 }
 
 .c-settings__input:hover,
@@ -47,16 +47,16 @@
 
 .o-button.-add, .o-button.-remove, .o-button.-clear{
   display: inline-block;
-  width: 120px;
-  height: 35px;
-  font-size: 14px;
+  width: rem(120);
+  height: rem(35);
+  font-size: rem(14);
   cursor: pointer;
 }
 
 .o-button::before {
-  letter-spacing: 10px;
+  letter-spacing: rem(10);
   font-family: 'icomoon' !important;
-  font-size: 12px;
+  font-size: rem(12);
 }
 
 .o-button.-add::before {
@@ -73,22 +73,22 @@
 
 .c-settings__tag {
   padding: 0;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: em(5);
+  margin-bottom: em(10);
   margin-right: auto;
   margin-left: auto;
-  max-width: 790px;
+  max-width: 700px;
 }
 
 .c-settings__tag-item {
-  font-size: 16px;
+  font-size: em(16);
   border-radius: 3px;
   display: inline-block;
-  padding: 5px 10px;
-  line-height: 0px;
+  padding: em(5) em(10);
+  line-height: 0;
   text-align: center;
-  margin-right: 5px;
-  margin-bottom: 7px;
+  margin-right: em(5);
+  margin-bottom: em(7);
   background-color: $theme.main;
 }
 
@@ -119,8 +119,8 @@
   color: inherit;
   display: inline-block;
   vertical-align: middle;
-  width: 18px;
-  height: 18px;
+  width: em(18);
+  height: em(18);
   padding: 0;
   position: relative;
   cursor: pointer;
@@ -136,8 +136,25 @@
   font-family: 'icomoon' !important;
   position: absolute;
   line-height: 0;
-  font-size: 15px;
+  font-size: em(15);
   left: 0;
+}
+
+@media only screen and (min-width: $media.lg) {
+  .o-button.-add, .o-button.-remove, .o-button.-clear{
+    width: em(120);
+    height: em(35);
+    font-size: em(14);
+  }
+
+  .c-settings__input {
+    height: em(35);
+    padding-left: em(8);
+  }
+  .o-button::before {
+    letter-spacing: em(10);
+    font-size: em(12);
+  }
 }
 
 @media only screen and (max-width: $media.xs) {

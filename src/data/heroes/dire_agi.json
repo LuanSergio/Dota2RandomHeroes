@@ -6,87 +6,87 @@
     {
       "name": "Bloodseeker",
       "id": "1",
-      "roles": ["Melee", "Carry", "Disabler", "Jungler", "Nuker", "Initiator", "Offlaner"]
+      "roles": ["Melee", "Carry", "Disabler", "Jungler", "Nuker", "Initiator", "Offlaner", "Agility"]
     },
     {
       "name": "Shadow Fiend",
       "id": "2",
-      "roles": ["Ranged", "Carry", "Nuker", "Mid"]
+      "roles": ["Ranged", "Carry", "Nuker", "Mid", "Agility"]
     },
     {
       "name": "Razor",
       "id": "3",
-      "roles": ["Ranged", "Carry", "Durable", "Nuker", "Pusher", "Mid"]
+      "roles": ["Ranged", "Carry", "Durable", "Nuker", "Pusher", "Mid", "Agility"]
     },
     {
       "name": "Venomancer",
       "id": "4",
-      "roles": ["Ranged", "Support", "Nuker", "Initiator", "Pusher", "Disabler"]
+      "roles": ["Ranged", "Support", "Nuker", "Initiator", "Pusher", "Disabler", "Agility"]
     },
     {
       "name": "Faceless Void",
       "id": "5",
-      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Escape", "Durable"]
+      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Escape", "Durable", "Agility"]
     },
     {
       "name": "Phantom Assassin",
       "id": "6",
-      "roles": ["Melee", "Carry", "Escape"]
+      "roles": ["Melee", "Carry", "Escape", "Agility"]
     },
     {
       "name": "Viper",
       "id": "7",
-      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Disabler", "Mid"]
+      "roles": ["Ranged", "Carry", "Durable", "Initiator", "Disabler", "Mid", "Agility"]
     },
     {
       "name": "Clinkz",
       "id": "8",
-      "roles": ["Ranged", "Carry", "Escape", "Pusher", "Mid"]
+      "roles": ["Ranged", "Carry", "Escape", "Pusher", "Mid", "Agility"]
     },
     {
       "name": "Broodmother",
       "id": "9",
-      "roles": ["Melee", "Carry", "Pusher", "Escape", "Nuker", "Offlaner"]
+      "roles": ["Melee", "Carry", "Pusher", "Escape", "Nuker", "Offlaner", "Agility"]
     },
     {
       "name": "Weaver",
       "id": "10",
-      "roles": ["Ranged", "Carry", "Escape", "Mid"]
+      "roles": ["Ranged", "Carry", "Escape", "Mid", "Agility"]
     },
     {
       "name": "Spectre",
       "id": "11",
-      "roles": ["Melee", "Carry", "Durable", "Escape"]
+      "roles": ["Melee", "Carry", "Durable", "Escape", "Agility"]
     },
     {
       "name": "Meepo",
       "id": "12",
-      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Pusher", "Mid"]
+      "roles": ["Melee", "Carry", "Escape", "Nuker", "Disabler", "Initiator", "Pusher", "Mid", "Agility"]
     },
     {
       "name": "Nyx Assassin",
       "id": "13",
-      "roles": ["Melee", "Disabler", "Nuker", "Initiator", "Escape", "Offlaner"]
+      "roles": ["Melee", "Disabler", "Nuker", "Initiator", "Escape", "Offlaner", "Agility"]
     },
     {
       "name": "Slark",
       "id": "14",
-      "roles": ["Melee", "Carry", "Escape", "Disabler", "Nuker"]
+      "roles": ["Melee", "Carry", "Escape", "Disabler", "Nuker", "Agility"]
     },
     {
       "name": "Medusa",
       "id": "15",
-      "roles": ["Ranged", "Carry", "Disabler", "Durable", "Mid"]
+      "roles": ["Ranged", "Carry", "Disabler", "Durable", "Mid", "Agility"]
     },
     {
       "name": "Terrorblade",
       "id": "16",
-      "roles": ["Melee", "Carry", "Pusher", "Nuker"]
+      "roles": ["Melee", "Carry", "Pusher", "Nuker", "Agility"]
     },
     {
       "name": "Arc Warden",
       "id": "17",
-      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Mid"]
+      "roles": ["Ranged", "Carry", "Escape", "Nuker", "Mid", "Agility"]
     }
   ]
 }

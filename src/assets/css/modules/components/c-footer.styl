@@ -1,17 +1,17 @@
 .c-footer {
   background-color: $theme.footer;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: em(20);
+  padding-bottom: em(20);
   border-top: 2px solid $theme.secondary;
 }
 
 .c-footer__container {
-  max-width: 1160px;
+  max-width: rem(1160);
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: em(40);
+  padding-right: em(40);
 }
 
 .c-footer__disclaimer {
@@ -21,7 +21,7 @@
 
 .c-footer__disclaimer {
   color: $theme.secondary;
-  font-size: 12px;
+  font-size: em(12);
 }
 
 .c-footer__socials {
@@ -33,7 +33,7 @@
   content: '\e909';
   font-family: 'icomoon' !important;
   color: $theme.secondary;
-  font-size: 45px;
+  font-size: rem(45);
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
@@ -41,4 +41,10 @@
 
 .c-footer__socials:hover::before {
   color: $theme.hoverSecondary;
+}
+
+@media only screen and (min-width: $media.lg) {
+  .c-footer__socials::before {
+    font-size: rem(65);
+  }
 }
