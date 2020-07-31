@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html -d dev --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": "https://github.com/luansergiomattos/Dota2RandomTool.git",
   "author": "Luan Sergio Mattos",
