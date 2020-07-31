@@ -1,4 +1,99 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="description" content="A Tool that helps you get a random hero on Dota 2!"><meta name="theme-color" content="#0d111c"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.30706bda.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.56efb72c.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.6d30e222.png"><link rel="manifest" href="/src/assets/img/favicon/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.93cccf48.svg" color="#0d111c"><link rel="shortcut icon" href="/favicon.8327f83c.ico"><meta name="msapplication-TileColor" content="#0d111c"><meta name="msapplication-config" content="/browserconfig.31da8dff.xml"><meta name="theme-color" content="#0d111c"><title>Dota 2 Random Heroes</title><link href="/normalizer.dd76327b.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link href="/apps.588c30db.css" rel="stylesheet"></head><body> <header class="c-header"> <h1 class="c-header__logo"> <img src="/logo_blue.cd4e1a54.png" alt="Dota 2 Random Tool" class="c-header__logo-img"> </h1>
-</header> <main class="limit"> <section class="c-random" data-random-ctn=""> <div class="c-random_hero-ctn" data-random-hero=""> </div> <button class="o-button -random" data-random-button="" autofocus>Random</button> <div class="c-settings" data-random-settings=""> <div class="c-settings__input-group"> <input class="c-settings__input -quantity" name="randomQuantity" spellcheck="false" placeholder="Qty" title="Qty" type="number" min="1" max="" step="1" data-random-quantity-input=""> <input class="c-settings__input" spellcheck="false" placeholder="Filter by role" title="Filter by role" type="text" list="filterHeroes" data-filter-input="roles"> <datalist id="filterHeroes" data-filter-heroes-list=""> </datalist> <input class="c-settings__input" spellcheck="false" placeholder="Add Hero to filter" title="Add Hero to filter" type="text" list="filterName" data-filter-input="name"> <datalist id="filterName" data-search-hero-list=""> </datalist> </div> <div class="c-settings__button-group"> <button class="o-button -add" data-add-button="">add</button> <button class="o-button -remove" data-remove-button="">remove</button> <button class="o-button -clear" data-clear-button="">clear</button> </div> </div> </section> <section class="c-gallery" data-heroes-gallery=""> <div class="c-gallery__group-container" data-group-container=""> <h2 class="c-gallery__group-title -strength">Strength</h2> <div class="c-gallery__groups" data-group="strength"> </div> </div> <div class="c-gallery__group-container" data-group-container=""> <h2 class="c-gallery__group-title -agility">Agility</h2> <div class="c-gallery__group" data-group="agility"> </div> </div> <div class="c-gallery__group-container" data-group-container=""> <h2 class="c-gallery__group-title -intelligence">Intelligence</h2> <div class="c-gallery__group" data-group="intelligence"> </div> </div> </section> </main> <footer class="c-footer"> <div class="c-footer__container"> <a href="https://github.com/" class="c-footer__socials">Github</a> <p class="c-footer__disclaimer"> This is a fan site. This site is in no way associated with or endorsed by Valve Corporation. <br class="h-mobile-off"> Dota 2™ and all respective names are registered trademark of Valve Corporation ® </p> </div>
-</footer> <script src="/js.08222241.js"></script> <noscript>You need to enable javascript to run this app.</noscript>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1">
+  <!-- <meta name="viewport" content="minimum-scale=1"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A Tool that helps you get a random hero on Dota 2!">
+  <meta name="theme-color" content="#0d111c">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.30706bda.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.56efb72c.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.6d30e222.png">
+<link rel="manifest" href="src/assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.93cccf48.svg" color="#0d111c">
+<link rel="shortcut icon" href="favicon.8327f83c.ico">
+<meta name="msapplication-TileColor" content="#0d111c">
+<meta name="msapplication-config" content="browserconfig.31da8dff.xml">
+<meta name="theme-color" content="#0d111c">
+  
+  <title>Dota 2 Random Heroes</title>
+  <link href="normalizer.dfbc4f46.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="apps.4d451b4b.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="c-header">
+  <h1 class="c-header__logo">
+    <img src="logo_blue.cd4e1a54.png" alt="Dota 2 Random Tool" class="c-header__logo-img">
+  </h1>
+</header>
+  <main class="limit">
+    <section class="c-random" data-random-ctn="">
+  <div class="c-random_hero-ctn" data-random-hero="">
+  </div>
+  <button class="o-button -random" data-random-button="" autofocus="">Random</button>
+
+  <div class="c-settings" data-random-settings="">
+
+  <div class="c-settings__input-group">
+    <input class="c-settings__input -quantity" name="randomQuantity" spellcheck="false" placeholder="Qty" title="Qty" type="number" min="1" max="" step="1" data-random-quantity-input="">
+
+    <input class="c-settings__input" spellcheck="false" placeholder="Filter by role" title="Filter by role" type="text" list="filterHeroes" data-filter-input="roles">
+    
+    <datalist id="filterHeroes" data-filter-heroes-list="">
+    </datalist>
+
+    <input class="c-settings__input" spellcheck="false" placeholder="Add Hero to filter" title="Add Hero to filter" type="text" list="filterName" data-filter-input="name">
+
+    <datalist id="filterName" data-search-hero-list="">
+    </datalist>
+  </div>
+
+  <div class="c-settings__button-group">
+    <button class="o-button -add" data-add-button="">add</button>
+    <button class="o-button -remove" data-remove-button="">remove</button>
+    <button class="o-button -clear" data-clear-button="">clear</button>
+  </div>
+</div>
+
+
+</section>
+
+    <section class="c-gallery" data-heroes-gallery="">
+  <div class="c-gallery__group-container" data-group-container="">
+    <h2 class="c-gallery__group-title -strength">Strength</h2>
+    <div class="c-gallery__groups" data-group="strength">
+    </div>
+  </div>
+  
+  <div class="c-gallery__group-container" data-group-container="">
+    <h2 class="c-gallery__group-title -agility">Agility</h2>
+    <div class="c-gallery__group" data-group="agility">
+    </div>
+  </div>
+  
+  <div class="c-gallery__group-container" data-group-container="">
+    <h2 class="c-gallery__group-title -intelligence">Intelligence</h2>
+    <div class="c-gallery__group" data-group="intelligence">
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="c-footer">
+  <div class="c-footer__container">
+    <a href="https://github.com/" class="c-footer__socials">Github</a>
+    <p class="c-footer__disclaimer">
+      This is a fan site. This site is in no way associated with or endorsed by Valve Corporation. <br class="h-mobile-off">
+      Dota 2™ and all respective names are registered trademark of Valve Corporation ®
+    </p>
+  </div>
+</footer>
+
+  <script src="js.0c0bd544.js"></script> 
+  <noscript>You need to enable javascript to run this app.</noscript>
+</body>
+
+</html>
