@@ -4,6 +4,8 @@
   max-width: em(1160);
   margin-right: auto;
   margin-left: auto;
+  animation-name: popIn;
+  animation-duration: 1s;
 }
 
 .c-settings__input-group, .c-settings__button-group {
@@ -154,6 +156,12 @@
   .o-button::before {
     letter-spacing: em(10);
     font-size: em(12);
+  }
+}
+
+@media only screen and (min-width: $media.sm) {
+  .c-settings__input-group {
+    margin-bottom: 7px;
   }
 }
 

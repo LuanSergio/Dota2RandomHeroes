@@ -13,6 +13,8 @@
   flex-direction: column;
   flex: 0 1 calc(32.33% - 10px);
   justify-items: space-between;
+  animation-name: popIn;
+  animation-duration: 1s;
 }
 
 .c-gallery__group-title {
@@ -131,11 +133,22 @@
 }
 
 @media only screen and (min-width: $media.lg) {
-.c-gallery__group-title::before {
-  left: em(-45);
-  height: em(30);
-  width: em(30);
+  .c-gallery__group-title::before {
+    left: em(-45);
+    height: em(30);
+    width: em(30);
+  }
 }
+
+@media only screen and (max-width: $media.sm) {
+  .c-gallery__heroes {
+    justify-content: center;
+  }
+
+  .c-gallery__group-container {
+    animation-name: slideInFromRight;
+    animation-duration: 0.1s;
+  }
 }
 
 
@@ -164,10 +177,6 @@
 
   .c-gallery__hero-img:hover {
     opacity: 1;
-  }
-
-  .c-gallery__heroes {
-    justify-content: center;
   }
 
   .c-gallery__group-title {
