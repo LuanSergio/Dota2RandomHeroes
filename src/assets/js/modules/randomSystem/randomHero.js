@@ -1,5 +1,5 @@
 import stringToImageName from '../../utils/stringToImageName';
-import images from "../../../img/heroes/*.png";
+import images from "../../../img/heroes/*.webp";
 import clearRandomContainer from './clearRandomContainer'
 import copyArrayElements from '../../utils/copyArrayElements'
 

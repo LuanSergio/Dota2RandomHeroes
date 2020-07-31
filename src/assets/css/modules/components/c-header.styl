@@ -1,6 +1,8 @@
 .c-header {
   position: absolute;
-  max-width: em(1160);
+  max-width: em(1180);
+  margin-right: em(10);
+  margin-left: em(10);
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -11,6 +13,8 @@
   vertical-align: top;
   margin-top: 0;
   margin-bottom: em(20);
+  animation-name: popIn;
+  animation-duration: 1s;
 }
 
 .c-header__logo::after {
@@ -23,6 +27,8 @@
   width: 800px;
   right: -90px;
   opacity: 0.70;
+  animation-name: popIn;
+  animation-duration: 1s;
   background-image: url("../img/rubick_header.png");
 }
 
@@ -45,6 +51,11 @@
   .c-header {
     position: relative;
     text-align: center;
+  }
+
+  .c-header {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .c-header__logo::after {
