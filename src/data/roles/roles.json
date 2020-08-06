@@ -1,23 +1,20 @@
 {
   "roles": [
-    "Melee", 
-    "Ranged", 
-    "Carry", 
-
-    "Support",
-    "Mid",
-    "Offlaner",
-
-    "Durable", 
-    "Initiator",
-    "Nuker",
-    "Disabler",
-    "Pusher",
-    "Escape",
-    "Jungler",
-
-    "Strength",
     "Agility",
-    "Intelligence"
+    "Carry", 
+    "Disabler",
+    "Durable", 
+    "Escape",
+    "Initiator",
+    "Intelligence",
+    "Jungler",
+    "Melee", 
+    "Mid",
+    "Nuker",
+    "Offlaner",
+    "Pusher",
+    "Ranged", 
+    "Strength",
+    "Support"
   ]
 }

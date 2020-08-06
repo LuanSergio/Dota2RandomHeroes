@@ -1,5 +1,5 @@
 import getHeroesArray from '../../utils/getHeroesArray'
-import { rolesList } from '../../../../data/index'
+import { rolesList } from '../../utils/getData'
 
 export default function returnFilterType(value) {
   const heroesName = getHeroesArray().map( hero => hero.name).sort();

@@ -1,4 +1,4 @@
-import { heroesList } from '../../../data/index';
+import { heroesList } from './getData';
 
 export default function getHeroesArray(heroes = []) {
 

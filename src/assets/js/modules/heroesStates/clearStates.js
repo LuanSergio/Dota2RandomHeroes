@@ -4,10 +4,10 @@ import getHeroesArray from '../../utils/getHeroesArray'
 export default function clearStates() {
   const heroes = getHeroesArray();
   heroes.forEach(hero => { 
-    const heroName = document.querySelector(`[data-hero="${hero.name}"]`);
-    heroName.classList.remove(states.excluded);
-    heroName.classList.remove(states.notSelected);
-    heroName.classList.remove(states.selected);
-    heroName.dataset.selection = '';
+    const heroNode = document.querySelector(`[data-hero="${hero.name}"]`);
+    heroNode.classList.remove(states.excluded);
+    heroNode.classList.remove(states.notSelected);
+    heroNode.classList.remove(states.selected);
+    heroNode.dataset.selection = '';
   });
 }

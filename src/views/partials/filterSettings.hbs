@@ -25,6 +25,9 @@
     />
     
     <datalist id="filterHeroes" data-filter-heroes-list>
+      {{#each roles/roles.roles }}
+        <option value="{{./this}}">
+      {{/each}}
     </datalist>
 
     <input 
@@ -38,6 +41,29 @@
     />
 
     <datalist id="filterName" data-search-hero-list>
+      {{#each heroes/radiant_str.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
+      
+      {{#each heroes/radiant_agi.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
+
+      {{#each heroes/radiant_int.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
+      
+      {{#each heroes/dire_str.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
+      
+      {{#each heroes/dire_agi.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
+
+      {{#each heroes/dire_int.heroes }}
+        <option value="{{{ name }}}"></option>
+      {{/each}}
     </datalist>
   </div>
 

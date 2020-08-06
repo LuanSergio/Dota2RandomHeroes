@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="A Tool that helps you get a random hero on Dota 2.">
   <meta name="theme-color" content="#0d111c" />
-  <include src="./partials/favicon.html"></include>
+  {{> favicon }}
   
   <title>Dota 2 Random Heroes</title>
-
+  
   <link rel="preload" href="/src/assets/css/normalizer.css" as="style">
   <link rel="preload" href="/src/assets/css/apps.styl" as="style">
   <link rel="preload" href="/src/assets/fonts/roboto/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/roboto/roboto-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/src/assets/fonts/roboto/roboto-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/src/assets/js/index.js" as="script">
 
@@ -21,12 +22,12 @@
 </head>
 
 <body>
-  <include src="./partials/header.html"></include>
+  {{> header }}
   <main class="limit">
-    <include src="./partials/random.html"></include>
-    <include src="./partials/Herogallery.html"></include>
+    {{> random }}
+    {{> heroesGallery }}
   </main>
-  <include src="./partials/footer.html"></include>
+  {{> footer }}
   <script src="src/assets/js/index.js"></script> 
   <noscript>You need to enable javascript to run this app.</noscript>
 </body>

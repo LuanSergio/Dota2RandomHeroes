@@ -1,0 +1,64 @@
+<section class="c-gallery" data-heroes-gallery>
+  <div class="c-gallery__group-container" data-group-container>
+    <h2 class="c-gallery__group-title -strength">Strength</h2>
+    <div class="c-gallery__groups" data-group="strength">
+      <div class="c-gallery__heroes" data-heroes-group="strength" data-heroes-faction="radiant">
+        {{#each heroes/radiant_str.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false"alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="c-gallery__heroes" data-heroes-group="strength" data-heroes-faction="dire">
+        {{#each heroes/dire_str.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false" alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  
+  <div class="c-gallery__group-container" data-group-container>
+    <h2 class="c-gallery__group-title -agility">Agility</h2>
+    <div class="c-gallery__group" data-group="agility">
+      <div class="c-gallery__heroes" data-heroes-group="agility" data-heroes-faction="radiant">
+        {{#each heroes/radiant_agi.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false"alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="c-gallery__heroes" data-heroes-group="agility" data-heroes-faction="dire">
+        {{#each heroes/dire_agi.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false"alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  
+  <div class="c-gallery__group-container" data-group-container>
+    <h2 class="c-gallery__group-title -intelligence">Intelligence</h2>
+    <div class="c-gallery__group" data-group="intelligence">
+      <div class="c-gallery__heroes" data-heroes-group="intelligence" data-heroes-faction="radiant">
+        {{#each heroes/radiant_int.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false"alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="c-gallery__heroes" data-heroes-group="intelligence" data-heroes-faction="dire">
+        {{#each heroes/dire_int.heroes }}
+          <div class="c-gallery__hero" data-hero="{{ name }}" data-selection="">
+            <img src="src/assets/img/heroes/{{ stringToImage name }}.webp" class="c-gallery__hero-img" draggable="false"alt="{{ name }}" title="{{ name }}">
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
