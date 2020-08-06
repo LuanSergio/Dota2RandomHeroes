@@ -1,4 +1,4 @@
-import  { states } from './states'
+import { states } from './states'
 
 export default function deselectAllHeroes() {
   const heroes = document.querySelectorAll('[data-selection]');
