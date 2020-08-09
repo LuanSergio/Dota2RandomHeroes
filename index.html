@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="A Tool that helps you get a random hero on Dota 2.">
-  <meta name="theme-color" content="#0d111c" />
+  <meta name="keywords" content="Dota 2, Dota, Random">
+  <meta name="author" content="Luan Sergio Mattos">
+  <meta name="theme-color" content="#0F182D" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0F182D">
+  <meta name="apple-mobile-web-app-title" content="DOTA 2 Random">
   {{> favicon }}
   
   <title>Dota 2 Random Heroes</title>
+  
+  <link rel="manifest" href="manifest.webmanifest">
   
   <link rel="preload" href="/src/assets/css/normalizer.css" as="style">
   <link rel="preload" href="/src/assets/css/apps.styl" as="style">
   <link rel="preload" href="/src/assets/fonts/roboto/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/src/assets/fonts/roboto/roboto-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/src/assets/fonts/icomoon/icomoon.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="/src/assets/js/index.js" as="script">
-
   <link href="src/assets/css/normalizer.css" rel="stylesheet">
   <link href="src/assets/css/apps.styl" rel="stylesheet">
 </head>
@@ -28,8 +33,17 @@
     {{> heroesGallery }}
   </main>
   {{> footer }}
-  <script src="src/assets/js/index.js"></script> 
+  <script src="src/assets/js/index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+      });
+    }
+  </script>
   <noscript>You need to enable javascript to run this app.</noscript>
 </body>
-
 </html>
