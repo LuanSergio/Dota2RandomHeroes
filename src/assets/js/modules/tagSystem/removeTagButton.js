@@ -6,10 +6,11 @@ export default function removeTagButton(heroes, filterTags) {
   const removeTagButton = document.querySelectorAll('[data-tags-items-remove]');
 
   removeTagButton.forEach( (button) => {
-    button.addEventListener('click', event => {
-      removeTag(filterTags, event.target.getAttribute("data-tags-items-remove"));
+    button.addEventListener('click', () => {
+      removeTag(filterTags,  button.getAttribute("data-tags-items-remove"));
       clearErrorMessage();
-      event.target.parentNode.remove();
+      button.innerHTML = "";
+      button.remove();
       filterHeroesArray(heroes, filterTags);
     });
   });

@@ -73,25 +73,25 @@
   content: '\e900';
 }
 
-.c-settings__tag {
+.c-settings__tag-container {
   padding: 0;
   margin-top: em(5);
   margin-bottom: em(10);
   margin-right: auto;
   margin-left: auto;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .c-settings__tag-item {
   font-size: em(16);
   border-radius: 3px;
   display: inline-block;
-  padding: em(5) em(10);
-  line-height: 0;
+  padding: em(6) em(10);
   text-align: center;
   margin-right: em(5);
   margin-bottom: em(7);
   background-color: $theme.main;
+  cursor: pointer;
 }
 
 .c-settings__tag-item:hover {
@@ -115,19 +115,29 @@
   transform: translateY(0.5px);
 }
 
-.c-settings__tag-icon {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
-  color: inherit;
+.c-settings__tag-text::before {
+  content: '\e903';
+  font-family: $fontfamily.icon !important;
   display: inline-block;
-  vertical-align: middle;
+  font-size: em(16);
+  margin-right: 5px;
+  transform: translateY(1px);
   width: em(18);
   height: em(18);
-  padding: 0;
-  position: relative;
-  cursor: pointer;
   opacity: 0.9;
+
 }
+
+// .c-settings__tag-icon {
+//   background-color: rgba(0, 0, 0, 0);
+//   border: 0;
+//   color: inherit;
+//   display: inline-block;
+//   vertical-align: middle;
+
+//   padding: 0;
+//   position: relative;
+// }
 
 .c-settings__tag-icon:hover {
   opacity: 1;
@@ -135,10 +145,9 @@
 
 .c-settings__tag-icon::before{
   content: '\e903';
-  font-family: $fontfamily.icon !important;
+  
   position: absolute;
   line-height: 0;
-  font-size: em(15);
   left: 0;
 }
 
