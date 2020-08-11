@@ -13,16 +13,21 @@
 //   deferredInstallPrompt.prompt();
 //   evt.srcElement.setAttribute('hidden', true);
 // }
+////
 
-let deferredInstallPrompt = null;
+const screenWidth = screen.width;
 
-window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
+if(screenWidth < 1024) {
+  let deferredInstallPrompt = null;
 
-function saveBeforeInstallPromptEvent(evt) {
-  deferredInstallPrompt = evt;
-}
+  window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
 
-function installPWA(evt) {
-  deferredInstallPrompt.prompt();
-  evt.srcElement.setAttribute('hidden', true);
+  function saveBeforeInstallPromptEvent(evt) {
+    deferredInstallPrompt = evt;
+    installPWA();
+  }
+
+  function installPWA() {
+    deferredInstallPrompt.prompt();
+  }
 }
