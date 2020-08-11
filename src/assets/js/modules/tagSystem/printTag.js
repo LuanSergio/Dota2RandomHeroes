@@ -13,8 +13,7 @@ export default function printTag(filterTags) {
   filterTags.forEach((tag) => {
     container.insertAdjacentHTML(
       'beforeend', 
-      `<li class="c-settings__tag-item ${tag.status}">
-        <button class="c-settings__tag-icon" data-tags-items-remove="${tag.value}"></button>
+      `<li class="c-settings__tag-item ${tag.status}" data-tags-items-remove="${tag.value}">
         <span class="c-settings__tag-text">${tag.value}</span>
       </li>`
     );
