@@ -1,6 +1,6 @@
 {
-  "name": "DOTA 2 Random",
-  "short_name": "DOTA 2 Random",
+  "name": "DOTA 2 RANDOM",
+  "short_name": "DOTA 2 RANDOM",
   "description": "A Tool that helps you get a random hero on Dota 2.",
   "theme_color": "#0f182D",
   "background_color": "#0f182D",
@@ -12,8 +12,7 @@
   "icons": [{
     "src": "/src/assets/img/icons/icon-512x512.png",
     "type": "image/png",
-    "sizes": "512x512",
-    "purpose": "maskable"
+    "sizes": "512x512"
   },
   {
     "src": "/src/assets/img/icons/icon-192x192.png",
