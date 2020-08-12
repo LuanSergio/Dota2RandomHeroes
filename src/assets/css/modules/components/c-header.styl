@@ -1,12 +1,17 @@
 .c-header {
   position: absolute;
-  max-width: em(1180);
-  margin-right: em(10);
-  margin-left: em(10);
+  display: flex;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100%;
+}
+
+.c-header__container {
+  max-width: rem(1180);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .c-header__logo {
@@ -15,17 +20,18 @@
   margin-bottom: em(20);
   animation-name: popIn;
   animation-duration: 1s;
+  margin-left: rem(10);
 }
 
-.c-header__logo::after {
+.c-header::after {
   content: '';
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 800px;
-  width: 800px;
-  right: -90px;
+  height: rem(800);
+  width: rem(800);
+  right: 0;
   opacity: 0.70;
   animation-name: popIn;
   animation-duration: 1s;
@@ -34,17 +40,6 @@
 
 .c-header__logo-img {
   max-width: 120px;
-}
-
-@media only screen and (min-width: $media.lg) {
-  .c-header__logo-img {
-    max-width: 180px;
-  }
-
-  .c-header__logo::after {
-    height: 1200px;
-    width: 1200px;
-  }
 }
 
 @media only screen and (max-width: $media.xs) {
@@ -58,7 +53,7 @@
     margin-left: 0;
   }
 
-  .c-header__logo::after {
+  .c-header::after {
     display: none;
   }
 

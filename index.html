@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175162501-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-175162501-1');
-  </script>
-
+  {{> utils/analytics-script }}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,8 +12,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#0F182D">
   <meta name="apple-mobile-web-app-title" content="DOTA 2 Random">
-  {{> ios-splash-screen }}
-  {{> favicon }}
+  {{> utils/ios-splash-screen }}
+  {{> utils/favicon }}
   
   <title>Dota 2 Random Heroes</title>
   
@@ -35,8 +26,6 @@
   <link rel="preload" href="/src/assets/js/index.js" as="script">
   <link href="src/assets/css/normalizer.css" rel="stylesheet">
   <link href="src/assets/css/apps.styl" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -45,6 +34,7 @@
     {{> random }}
     {{> heroesGallery }}
   </main>
+  {{> install-box }}
   {{> footer }}
   <script src="src/assets/js/index.js"></script>
   <script src="src/assets/js/install.js"></script>

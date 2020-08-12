@@ -1,0 +1,99 @@
+.c-install-box {
+  background-image: url("../img/install-box-background.webp");
+  background-position: 0;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: $theme.tertiary;
+  border-top: 2px solid $theme.secondary;
+  border-right: 2px solid $theme.secondary;
+  border-bottom: 2px solid $theme.secondary;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  -webkit-box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
+  margin-bottom: rem(30);
+  display: flex;
+  width: 55%;
+  max-width: rem(800);
+}
+
+.c-install-box__container {
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+  margin-left: rem(230);
+}
+
+.c-install-box__title {
+  margin-top: 0;
+  font-size: rem(26);
+  color: $theme.light;
+  letter-spacing: rem(2);
+  margin-bottom: rem(10);
+}
+
+.c-install-box__text {
+  margin-top: 0;
+  color: $theme.light;
+  letter-spacing: rem(2);
+  font-size: rem(16);
+  margin-bottom: rem(20);
+}
+
+.c-install-box__button {
+  padding: rem(15);
+}
+
+@media only screen and (max-width: $media.md) {
+  .c-install-box {
+    width: 90%;
+    margin-top: rem(23);
+  }
+}
+
+@media only screen and (max-width: $media.xs) {
+  .c-install-box {
+    width: 95%;
+    margin-top: 75px;
+    background-position: -70px 0;
+  }
+
+  .c-install-box__container {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 135px;
+  }
+
+  .c-install-box__title {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+
+  .c-install-box__text {
+    margin-top: 0;
+    color: $theme.light;
+    font-size: 14px;
+  }
+
+  .c-install-box__button {
+    padding: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 321px) {
+  .c-install-box {
+    width: 100%;
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 75px;
+    background-position: -110px 0;
+  }
+
+    
+  .c-install-box__container {
+    margin-left: 90px;
+  }
+}
