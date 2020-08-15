@@ -8,10 +8,9 @@ installButton.addEventListener('click', installPWA);
 
 function saveBeforeInstallPromptEvent(evt) {
   deferredInstallPrompt = evt;
+  deferredInstallPrompt.prompt();
   if(screenWidth < 767) {
     installBox.classList.remove('h-hidden');
-  } else {
-    deferredInstallPrompt.prompt();
   }
 }
 
