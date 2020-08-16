@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-   A Tool that helps you get a random hero on DOTA 2, <br>
+   A Tool that helps you get a random hero on DOTA 2,
    with some extra filter features.
 </h4>
 
