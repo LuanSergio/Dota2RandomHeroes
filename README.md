@@ -17,9 +17,9 @@
 
 <div align="center">
   <a href="#popcorn-Preview"><strong>Preview</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#robot-Technologies">Technologies</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#man_technologist-Running-Locally">Running Locally</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-License">License</a>
+  <a href="#robot-Technologies"><strong>Technologies</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#man_technologist-Running-Locally"><strong>Running Locally</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-License"><strong>License</strong></a>
 </div>
 
 ## :popcorn: Preview
@@ -59,7 +59,7 @@
 </div>
 
 ## :man_technologist: Running Locally
-<p>You must have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>, <a href="https://nodejs.org/en/">Node</a> and <a href="#man_technologist-Running-Locally">Yarn</a> installed.
+<p>You must have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>, <a href="https://nodejs.org/en/">Node</a> and <a href="https://yarnpkg.com/">Yarn</a> installed.
 	
 ```bash
 #Install Parcel Bundler:
