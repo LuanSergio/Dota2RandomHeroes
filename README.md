@@ -58,7 +58,7 @@
 <p>You must have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>, <a href="https://nodejs.org/en/">Node</a> and <a href="#man_technologist-Running-Locally">Yarn</a> installed.
 	
 ```bash
-#Install parcel:
+#Install Parcel Bundler:
 yarn global add parcel-bundler
 
 # Clone the repository
