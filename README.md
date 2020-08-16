@@ -27,13 +27,17 @@
 ### :computer: Desktop
 
 <div align="center">
-  <img alt="Desktop preview" title="Desktop preview" src="http://g.recordit.co/q5qO2o3lKY.gif">
+  <a href="https://dota2random.netlify.app/">	
+    <img alt="Desktop preview" title="Desktop preview" src="http://g.recordit.co/q5qO2o3lKY.gif">
+  </a>
 </div>
 
 ### :iphone: Mobile
 
 <div align="center">
-  <img alt="Desktop preview" title="Desktop preview" src="https://media2.giphy.com/media/TgmnrjMyBMJpsLIIBe/giphy.gif">
+  <a href="https://dota2random.netlify.app/">
+    <img alt="Desktop preview" title="Desktop preview" src="https://media2.giphy.com/media/TgmnrjMyBMJpsLIIBe/giphy.gif">
+  </a>
 </div>
 
 
