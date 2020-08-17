@@ -9,17 +9,17 @@
    with some extra filter features.
 </h4>
 
-<p align="center">
+<div align="center">
   <img alt="Uses HTML" src="https://forthebadge.com/images/badges/uses-html.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Uses CSS" src="https://forthebadge.com/images/badges/uses-css.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Made with JavaScript" src="https://forthebadge.com/images/badges/made-with-javascript.svg">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <a href="https://dota2random.netlify.app/">
     <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
   </a>
-</p>
+</div>
 
 <div align="center">
   <a href="#popcorn-Preview"><strong>Preview</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
