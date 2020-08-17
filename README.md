@@ -13,8 +13,10 @@
   <img alt="Uses HTML" src="https://forthebadge.com/images/badges/uses-html.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Uses CSS" src="https://forthebadge.com/images/badges/uses-css.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Made with JavaScript" src="https://forthebadge.com/images/badges/made-with-javascript.svg">
-  <br>
-  <img alt="Made with JavaScript" src="https://i.imgur.com/HyVOJw8.png">
+</p>
+
+<p align="center">
+  <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
 </p>
 
 <div align="center">
