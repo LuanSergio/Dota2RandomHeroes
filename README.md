@@ -16,7 +16,9 @@
 </p>
 
 <p align="center">
+	<br>
   <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
+	<br>
 </p>
 
 <div align="center">
