@@ -52,7 +52,7 @@
 </div>
 
 ## :robot: Technologies
-<p>Stuff that I used:</p>
+<p>Technologies that I used:</p>
 
 -  [Yarn](https://yarnpkg.com/)
 -  [Parcel Bundler](https://parceljs.org/)
