@@ -9,24 +9,24 @@
    with some extra filter features.
 </h4>
 
-<div align="center">
+<p align="center">
   <img alt="Uses HTML" src="https://forthebadge.com/images/badges/uses-html.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Uses CSS" src="https://forthebadge.com/images/badges/uses-css.svg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img alt="Made with JavaScript" src="https://forthebadge.com/images/badges/made-with-javascript.svg">
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <a href="https://dota2random.netlify.app/">
     <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
   </a>
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <a href="#popcorn-Preview"><strong>Preview</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#robot-Technologies"><strong>Technologies</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#man_technologist-Running-Locally"><strong>Running Locally</strong></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-License"><strong>License</strong></a>
-</div>
+</p>
 
 ## :popcorn: Preview
 
