@@ -17,7 +17,9 @@
 
 <p align="center">
   <br>&nbsp;
-  <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
+  <a href="https://dota2random.netlify.app/">
+    <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
+  </a>
   <br>&nbsp;
 </p>
 
