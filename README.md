@@ -69,7 +69,7 @@
 	
 ```bash
 #Install Parcel Bundler:
-yarn global add parcel-bundler
+$yarn global add parcel-bundler
 
 # Clone the repository
 $ git clone https://github.com/luansergiomattos/Dota2RandomTool.git
