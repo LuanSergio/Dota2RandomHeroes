@@ -19,7 +19,6 @@
   <a href="https://dota2random.netlify.app/">
     <img alt="Live version" src="https://i.imgur.com/HyVOJw8.png">
   </a>
-  <br>&nbsp;
 </p>
 
 <div align="center">
