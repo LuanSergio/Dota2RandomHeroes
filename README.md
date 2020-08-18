@@ -42,7 +42,7 @@
 
 <div align="center">
   <a href="https://dota2random.netlify.app/">
-    <img alt="Desktop preview" title="Desktop preview" src="https://media2.giphy.com/media/TgmnrjMyBMJpsLIIBe/giphy.gif">
+    <img alt="Mobile preview" title="Mobile preview" src="https://media2.giphy.com/media/TgmnrjMyBMJpsLIIBe/giphy.gif">
   </a>
 </div>
 
