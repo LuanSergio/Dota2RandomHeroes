@@ -92,4 +92,4 @@ $ yarn build
 
 ## :memo: License
 This project is under the MIT license.
-**[Click here for more information](http://opensource.org/licenses/mit-license.php)**
+**[Click here for more information](https://github.com/luansergiomattos/Dota2RandomTool/blob/master/LICENSE)**
