@@ -13,6 +13,10 @@
   user-select: none;
 }
 
+html{
+  -webkit-transform: translate3d(0,0,0);
+}
+
 html,
 body {
   width: 100%;
@@ -21,16 +25,11 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   font-family: $fontfamily.main;
-  background-color: #0d111c;
-  background-image: url("../img/body-background.webp");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-size: cover;
   font-size: 1em;
   //firefox custom scrollbar
   scrollbar-color: $theme.side $theme.main;
   scrollbar-width: auto;
-
   // ie and edge custom scroll bar
   scrollbar-face-color: $theme.main;
   scrollbar-track-color: $theme.side;
@@ -40,6 +39,12 @@ body {
 
 body {
   padding-top: 20px;
+  background-color: #0d111c;
+  background-image: url("../img/body-background.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transform:translatez(0);
+  -webkit-transform:translatez(0);
 }
 
 //chrome custom scroll bar
