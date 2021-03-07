@@ -102,6 +102,11 @@
       "name": "Pangolier",
       "id": "20",
       "roles": ["Melee", "Carry", "Nuker", "Disabler", "Durable", "Escape", "Initiator", "Offlaner", "Agility"]
+    },
+    {
+      "name": "Hoodwink",
+      "id": "21",
+      "roles": ["Ranged", "Nuker", "Disabler","Escape", "Agility"]
     }
   ]
 }
