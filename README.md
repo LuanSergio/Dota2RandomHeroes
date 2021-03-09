@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://dota2random.netlify.app/">	
-    <img alt="DOTA 2 Random Tool" title="DOTA 2 Random Tool" src="https://github.com/luansergiomattos/Dota2RandomTool/blob/master/src/assets/img/logo_blue.webp" />
+    <img alt="DOTA 2 Random Tool" title="DOTA 2 Random Heroes" src="https://github.com/luansergiomattos/Dota2RandomTool/blob/master/src/assets/img/logo_blue.webp" />
   </a>
 </h1>
 
