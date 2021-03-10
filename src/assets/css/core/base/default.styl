@@ -1,3 +1,5 @@
+$base-font-size: 1em;
+
 *,
 *::before,
 *::after {
@@ -112,5 +114,23 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (min-width: $media.lg-plus) {
   body {
     font-size: 2em;
+  }
+}
+
+@include respond-to(fullHD) {
+  html {
+    font-size: $base-font-size*1.4;
+  }
+}
+
+@include respond-to(quadHD) {
+  html {
+    font-size: $base-font-size*2;
+  }
+}
+
+@include respond-to(ultraHD) {
+  html {
+    font-size: $base-font-size*2.8;
   }
 }
