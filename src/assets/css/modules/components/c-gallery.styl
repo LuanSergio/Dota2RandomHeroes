@@ -135,7 +135,7 @@
   display: none;
 }
 
-@media only screen and (min-width: $media.lg) {
+@media only screen and (min-width: $breakpoints.desktop) {
   .c-gallery__group-title::before {
     left: em(-45);
     height: em(30);
@@ -143,7 +143,7 @@
   }
 }
 
-@media only screen and (max-width: $media.sm) {
+@media only screen and (max-width: $breakpoints.tablet) {
   .c-gallery__heroes {
     justify-content: center;
   }
@@ -155,7 +155,7 @@
 }
 
 
-@media only screen and (max-width: $media.xs) {
+@media only screen and (max-width: $breakpoints.smartphone) {
   .c-gallery {
     display: block;
     margin-left: auto;
