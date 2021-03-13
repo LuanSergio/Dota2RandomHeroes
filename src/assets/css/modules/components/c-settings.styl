@@ -140,7 +140,7 @@
   left: 0;
 }
 
-@media only screen and (min-width: $media.lg) {
+@media only screen and (min-width: $breakpoints.desktop) {
   .o-button.-add, .o-button.-remove, .o-button.-clear{
     width: em(120);
     height: em(35);
@@ -157,13 +157,13 @@
   }
 }
 
-@media only screen and (min-width: $media.sm) {
+@media only screen and (min-width: $breakpoints.tablet) {
   .c-settings__input-group {
     margin-bottom: 7px;
   }
 }
 
-@media only screen and (max-width: $media.xs) {
+@media only screen and (max-width: $breakpoints.smartphone) {
   .c-settings__tag-item {
     font-size: 17px;
     padding: 10px 15px;
