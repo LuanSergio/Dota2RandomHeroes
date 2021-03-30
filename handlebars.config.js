@@ -1,5 +1,5 @@
 module.exports = {
-  data: 'src/data/',
+  data: 'src/assets/data/',
   helpers: 'src/handlebarsTools',
   layouts: 'src/views/templates',
   partials: 'src/views/partials',
