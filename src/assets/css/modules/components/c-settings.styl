@@ -51,7 +51,7 @@
   display: inline-block;
   width: rem(120);
   height: rem(35);
-  font-size: rem(13);
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -140,22 +140,6 @@
   left: 0;
 }
 
-@media only screen and (min-width: $breakpoints.desktop) {
-  .o-button.-add, .o-button.-remove, .o-button.-clear{
-    width: em(120);
-    height: em(35);
-    font-size: em(14);
-  }
-
-  .c-settings__input {
-    height: em(35);
-    padding-left: em(8);
-  }
-  .o-button::before {
-    letter-spacing: em(10);
-    font-size: em(12);
-  }
-}
 
 @media only screen and (min-width: $breakpoints.tablet) {
   .c-settings__input-group {
