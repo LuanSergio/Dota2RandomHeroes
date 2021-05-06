@@ -117,6 +117,11 @@
       "name": "Snapfire",
       "id": "24",
       "roles": ["Ranged", "Support", "Nuker", "Disabler", "Escape", "Offlaner", "Strength"]
+    },
+    {
+      "name": "Dawnbreaker",
+      "id": "25",
+      "roles": ["Melee", "Carry", "Durable"]
     }
   ]
 }
