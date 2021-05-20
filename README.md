@@ -68,8 +68,6 @@
 <p>You must have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>, <a href="https://nodejs.org/en/">Node</a> and <a href="https://yarnpkg.com/">Yarn</a> installed.
 	
 ```bash
-# Install Parcel Bundler:
-$ yarn global add parcel-bundler
 
 # Clone the repository
 $ git clone https://github.com/luansergiomattos/Dota2RandomTool.git
