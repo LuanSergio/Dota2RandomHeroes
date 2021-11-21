@@ -4,14 +4,14 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-color: $theme.tertiary;
-  border-top: 2px solid $theme.secondary;
-  border-right: 2px solid $theme.secondary;
-  border-bottom: 2px solid $theme.secondary;
-  border-bottom-right-radius: 9px;
-  border-top-right-radius: 9px;
-  -webkit-box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
-  box-shadow: 6px 10px 12px 0px rgba(0,0,0,0.75);
+  border-top: rem(2) solid $theme.secondary;
+  border-right: rem(2) solid $theme.secondary;
+  border-bottom: rem(2) solid $theme.secondary;
+  border-bottom-right-radius: rem(9);
+  border-top-right-radius: rem(9);
+  -webkit-box-shadow: rem(6) rem(10) rem(12) rem(0) rgba(0,0,0,0.75);
+  -moz-box-shadow: rem(6) rem(10) rem(12) rem(0) rgba(0,0,0,0.75);
+  box-shadow: rem(6) rem(10) rem(12) rem(0) rgba(0,0,0,0.75);
   margin-top: rem(35);
   display: flex;
   width: 55%;
@@ -57,46 +57,46 @@
   .c-install-box {
     width: 95%;
     background-position: rem(-85) 0;
-    margin-top: 75px;
+    margin-top: rem(75);
   }
 
   .c-install-box__container {
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 135px;
-    margin-right: 5px;
+    padding-right: rem(15);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+    margin-left: rem(135);
+    margin-right: rem(5);
   }
 
   .c-install-box__title {
-    font-size: 24px;
-    margin-bottom: 7px;
+    font-size: rem(24);
+    margin-bottom: rem(7);
   }
 
   .c-install-box__text {
     margin-top: 0;
     color: $theme.light;
-    font-size: 14px;
+    font-size: rem(14);
   }
 
   .c-install-box__button {
-    padding: 12px;
+    padding: rem(12);
   }
 
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: rem(321)) {
   .c-install-box {
     width: 100%;
     border-right: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    margin-top: 75px;
-    background-position: -110px 0;
+    margin-top: rem(75);
+    background-position: rem(-110) 0;
   }
 
     
   .c-install-box__container {
-    margin-left: 90px;
+    margin-left: rem(90);
   }
 }

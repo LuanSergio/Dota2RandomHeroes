@@ -39,7 +39,7 @@ body {
 }
 
 body {
-  padding-top: 20px;
+  padding-top: rem(20);
   background-color: #0d111c;
   background-image: url("../img/body-background.webp");
   background-repeat: no-repeat;
@@ -47,16 +47,16 @@ body {
 
 //chrome custom scroll bar
 body::-webkit-scrollbar {
-  width: 15px;
-  height: 0px;
+  width: rem(15);
+  height: rem(0);
 }
 body::-webkit-scrollbar-track {
   background-color: $theme.main;
-  border-radius: 0px;
+  border-radius: rem(0);
 }
 body::-webkit-scrollbar-thumb {
   background-color:  $theme.side;
-  border-radius: 0px;
+  border-radius: rem(0);
 }
 body::-webkit-scrollbar-corner {
   background-color: $theme.main;
@@ -76,7 +76,7 @@ optgroup:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid $colors.astral !important;
+  border: rem(2) solid $colors.astral !important;
 }
 
 ::placeholder {
@@ -105,11 +105,11 @@ input::-webkit-calendar-picker-indicator:hover {
 
 .noscript {
   color: $theme.secondary;
-  font-size: 26px;
+  font-size: rem(26);
   font-weight: bold;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: rem(40);
+  margin-bottom: rem(40);
 }
 
 .noscript__link {
@@ -123,18 +123,7 @@ input::-webkit-calendar-picker-indicator:hover {
 
 @media only screen and (min-width: $breakpoints.fullHD) {
   body {
-    font-size: $base-font-size*1.4;
+    font-size: $base-font-size*1.2;
   }
 }
 
-@media only screen and (min-width: $breakpoints.quadHD) {
-  body {
-    font-size: $base-font-size*2;
-  }
-}
-
-@media only screen and (min-width: $breakpoints.ultraHD) {
-  body {
-    font-size: $base-font-size*2.8;
-  }
-}
