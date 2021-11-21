@@ -121,7 +121,12 @@
     {
       "name": "Dawnbreaker",
       "id": "25",
-      "roles": ["Melee", "Carry", "Durable"]
+      "roles": ["Melee", "Carry", "Durable", "Strength"]
+    },
+    {
+      "name": "Marci",
+      "id": "26",
+      "roles": ["Melee", "Carry", "Initiator", "Disabler", "Escape", "Support", "Strength"]
     }
   ]
 }
